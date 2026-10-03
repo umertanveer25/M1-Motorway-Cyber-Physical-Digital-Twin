@@ -1,0 +1,288 @@
+{
+  "digital twin connected autonomous vehicle platooning": [
+    {
+      "id": "https://openalex.org/W4381546235",
+      "doi": "https://doi.org/10.1016/j.dcan.2023.06.002",
+      "title": "Digital twin empowered cooperative trajectory planning of platoon vehicles for collision avoidance with unexpected obstacles",
+      "year": 2023,
+      "citations": 21,
+      "authors": [
+        "Hao Du",
+        "Supeng Leng",
+        "Jianhua He"
+      ],
+      "venue": "Digital Communications and Networks",
+      "abstract_inverted_index_len": 143
+    },
+    {
+      "id": "https://openalex.org/W4386898712",
+      "doi": "https://doi.org/10.1016/j.comcom.2023.09.019",
+      "title": "Co-simulated digital twin on the network edge: A vehicle platoon",
+      "year": 2023,
+      "citations": 24,
+      "authors": [
+        "Maurizio Palmieri",
+        "Christian Quadri",
+        "Adriano Fagiolini"
+      ],
+      "venue": "Computer Communications",
+      "abstract_inverted_index_len": 127
+    },
+    {
+      "id": "https://openalex.org/W7161232371",
+      "doi": "https://doi.org/10.26599/jicv.2026.9210084",
+      "title": "Multisource human-in-the-loop digital twin testbed for connected and autonomous vehicles in mixed traffic flow",
+      "year": 2026,
+      "citations": 0,
+      "authors": [
+        "Jianghong Dong",
+        "Chunying Yang",
+        "Mengchi Cai"
+      ],
+      "venue": "Journal of Intelligent and Connected Vehicles",
+      "abstract_inverted_index_len": 98
+    },
+    {
+      "id": "https://openalex.org/W4390235746",
+      "doi": "https://doi.org/10.3390/info15010014",
+      "title": "A Comprehensive Survey of Threats in Platooning\u2014A Cloud-Assisted Connected and Autonomous Vehicle Application",
+      "year": 2023,
+      "citations": 12,
+      "authors": [
+        "Al Tariq Sheik",
+        "Carsten R. Maple",
+        "Gregory Epiphaniou"
+      ],
+      "venue": "Information",
+      "abstract_inverted_index_len": 121
+    },
+    {
+      "id": "https://openalex.org/W3206642863",
+      "doi": "https://doi.org/10.1016/j.sysarc.2021.102309",
+      "title": "Safe and secure platooning of Automated Guided Vehicles in Industry 4.0",
+      "year": 2021,
+      "citations": 46,
+      "authors": [
+        "Muhammad Atif Javed",
+        "Faiz Ul Muram",
+        "Sasikumar Punnekkat"
+      ],
+      "venue": "Journal of Systems Architecture",
+      "abstract_inverted_index_len": 153
+    }
+  ],
+  "digital twin motorway highway traffic CACC": [
+    {
+      "id": "https://openalex.org/W4386898712",
+      "doi": "https://doi.org/10.1016/j.comcom.2023.09.019",
+      "title": "Co-simulated digital twin on the network edge: A vehicle platoon",
+      "year": 2023,
+      "citations": 24,
+      "authors": [
+        "Maurizio Palmieri",
+        "Christian Quadri",
+        "Adriano Fagiolini"
+      ],
+      "venue": "Computer Communications",
+      "abstract_inverted_index_len": 127
+    },
+    {
+      "id": "https://openalex.org/W2215887190",
+      "doi": null,
+      "title": "Modeling, Estimation and Control of Traffic",
+      "year": 2014,
+      "citations": 3,
+      "authors": [
+        "Dongyan Su"
+      ],
+      "venue": "eScholarship (California Digital Library)",
+      "abstract_inverted_index_len": 281
+    },
+    {
+      "id": "https://openalex.org/W4386967592",
+      "doi": "https://doi.org/10.3390/machines11090920",
+      "title": "Urban Platooning Combined with Dynamic Traffic Lights",
+      "year": 2023,
+      "citations": 5,
+      "authors": [
+        "Husam Altamimi",
+        "Istv\u00e1n Varga",
+        "Tam\u00e1s Tettamanti"
+      ],
+      "venue": "Machines",
+      "abstract_inverted_index_len": 100
+    },
+    {
+      "id": "https://openalex.org/W4402636962",
+      "doi": "https://doi.org/10.3390/app14188456",
+      "title": "Comprehensive Review of Traffic Modeling: Towards Autonomous Vehicles",
+      "year": 2024,
+      "citations": 28,
+      "authors": [
+        "\u0141ukasz \u0141ach",
+        "Dmytro Svetozarovich Svyetlichnyy"
+      ],
+      "venue": "Applied Sciences",
+      "abstract_inverted_index_len": 70
+    },
+    {
+      "id": "https://openalex.org/W4388469934",
+      "doi": "https://doi.org/10.1109/tits.2023.3325000",
+      "title": "Roundabouts: Traffic Simulations of Connected and Automated Vehicles\u2014A State of the Art",
+      "year": 2023,
+      "citations": 19,
+      "authors": [
+        "Elena Campi",
+        "Gianpiero R M Mastinu",
+        "Giorgio Previati"
+      ],
+      "venue": "IEEE Transactions on Intelligent Transportation Systems",
+      "abstract_inverted_index_len": 152
+    }
+  ],
+  "cyber-physical digital twin V2X CACC": [
+    {
+      "id": "https://openalex.org/W4386898712",
+      "doi": "https://doi.org/10.1016/j.comcom.2023.09.019",
+      "title": "Co-simulated digital twin on the network edge: A vehicle platoon",
+      "year": 2023,
+      "citations": 24,
+      "authors": [
+        "Maurizio Palmieri",
+        "Christian Quadri",
+        "Adriano Fagiolini"
+      ],
+      "venue": "Computer Communications",
+      "abstract_inverted_index_len": 127
+    },
+    {
+      "id": "https://openalex.org/W4319341675",
+      "doi": "https://doi.org/10.1109/tiv.2023.3243096",
+      "title": "Mixed Cloud Control Testbed: Validating Vehicle-Road-Cloud Integration via Mixed Digital Twin",
+      "year": 2023,
+      "citations": 70,
+      "authors": [
+        "Jianghong Dong",
+        "Qing Xu",
+        "Jiawei Wang"
+      ],
+      "venue": "IEEE Transactions on Intelligent Vehicles",
+      "abstract_inverted_index_len": 120
+    },
+    {
+      "id": "https://openalex.org/W7161232371",
+      "doi": "https://doi.org/10.26599/jicv.2026.9210084",
+      "title": "Multisource human-in-the-loop digital twin testbed for connected and autonomous vehicles in mixed traffic flow",
+      "year": 2026,
+      "citations": 0,
+      "authors": [
+        "Jianghong Dong",
+        "Chunying Yang",
+        "Mengchi Cai"
+      ],
+      "venue": "Journal of Intelligent and Connected Vehicles",
+      "abstract_inverted_index_len": 98
+    },
+    {
+      "id": "https://openalex.org/W4395471036",
+      "doi": "https://doi.org/10.1109/ojcoms.2024.3393752",
+      "title": "Access-Side DDoS Defense for Space-Air-Ground Integrated 6G V2X Networks",
+      "year": 2024,
+      "citations": 12,
+      "authors": [
+        "Xu Chen",
+        "Wei Feng",
+        "Yunfei Chen"
+      ],
+      "venue": "IEEE Open Journal of the Communications Society",
+      "abstract_inverted_index_len": 120
+    },
+    {
+      "id": "https://openalex.org/W7140488754",
+      "doi": "https://doi.org/10.1016/j.vehcom.2026.101022",
+      "title": "NextG-VCP for cyber-physical vehicular health monitoring system (CP-VHMS)",
+      "year": 2026,
+      "citations": 0,
+      "authors": [
+        "Sze Wei Tan",
+        "MD Arafatur Rahman",
+        "Md Zoheb Hassan"
+      ],
+      "venue": "Vehicular Communications",
+      "abstract_inverted_index_len": 0
+    }
+  ],
+  "Pakistan motorway digital twin M1 CPEC": [],
+  "zero trust digital twin vehicular network": [
+    {
+      "id": "https://openalex.org/W4415818523",
+      "doi": "https://doi.org/10.3390/fi17110505",
+      "title": "Resilient Federated Learning for Vehicular Networks: A Digital Twin and Blockchain-Empowered Approach",
+      "year": 2025,
+      "citations": 5,
+      "authors": [
+        "Jian Li",
+        "Chuntao Zheng",
+        "Ziyao Chen"
+      ],
+      "venue": "Future Internet",
+      "abstract_inverted_index_len": 162
+    },
+    {
+      "id": "https://openalex.org/W4319653420",
+      "doi": "https://doi.org/10.48550/arxiv.2302.03107",
+      "title": "Decentralized Zero-Trust Framework for Digital Twin-based 6G",
+      "year": 2023,
+      "citations": 7,
+      "authors": [
+        "Ismaeel Al Ridhawi",
+        "Safa Otoum",
+        "Moayad Aloqaily"
+      ],
+      "venue": "arXiv (Cornell University)",
+      "abstract_inverted_index_len": 162
+    },
+    {
+      "id": "https://openalex.org/W4393087172",
+      "doi": "https://doi.org/10.1016/j.comnet.2024.110350",
+      "title": "A comprehensive survey on digital twin for future networks and emerging Internet of Things industry",
+      "year": 2024,
+      "citations": 145,
+      "authors": [
+        "Akram Hakiri",
+        "Aniruddha S. Gokhale",
+        "Sadok Ben Yahia"
+      ],
+      "venue": "Computer Networks",
+      "abstract_inverted_index_len": 0
+    },
+    {
+      "id": "https://openalex.org/W4385194790",
+      "doi": "https://doi.org/10.1109/tgcn.2023.3298039",
+      "title": "Adaptive Digital Twin for UAV-Assisted Integrated Sensing, Communication, and Computation Networks",
+      "year": 2023,
+      "citations": 95,
+      "authors": [
+        "Bin Li",
+        "Wenshuai Liu",
+        "Wancheng Xie"
+      ],
+      "venue": "IEEE Transactions on Green Communications and Networking",
+      "abstract_inverted_index_len": 109
+    },
+    {
+      "id": "https://openalex.org/W4281853153",
+      "doi": "https://doi.org/10.3390/s22114106",
+      "title": "B5GEMINI: AI-Driven Network Digital Twin",
+      "year": 2022,
+      "citations": 53,
+      "authors": [
+        "Alberto Moz\u00f3",
+        "Amit Karamchandani",
+        "Sandra G\u00f3mez-Canaval"
+      ],
+      "venue": "Sensors",
+      "abstract_inverted_index_len": 136
+    }
+  ]
+}

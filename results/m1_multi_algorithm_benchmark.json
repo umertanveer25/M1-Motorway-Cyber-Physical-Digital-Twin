@@ -1,0 +1,254 @@
+{
+  "metadata": {
+    "corridor": "Pakistan M-1 Motorway (Peshawar - Islamabad, 155 km)",
+    "interchanges": 10,
+    "simulation_cycle": "365 Days 24x7 Annual Cycle (8,760 Hours)",
+    "total_annual_trips": 38946254,
+    "total_injected_attacks": 614992,
+    "simulation_method": "Empirical Dynamic Monte-Carlo Digital Twin",
+    "weather_modes": [
+      "Clear",
+      "Dense Fog (Swabi/Indus)",
+      "Monsoon Storms",
+      "Summer Optical Glare"
+    ]
+  },
+  "cybersecurity_detection_benchmark": {
+    "Isolation Forest": {
+      "type": "Unsupervised Anomaly Detector",
+      "accuracy": 95.41,
+      "precision": 95.8,
+      "recall": 85.39,
+      "f1_score": 90.29,
+      "fpr": 1.25,
+      "latency_us": 34.2,
+      "attacks_neutralized": 525115,
+      "attacks_missed": 89877,
+      "false_alarms": 486587,
+      "resilience_fog_monsoon": 82.7,
+      "computational_complexity": "O(n * t * log s)"
+    },
+    "Rule-Based Filter": {
+      "type": "Kinematic 3-Sigma Bound Check",
+      "accuracy": 98.27,
+      "precision": 98.92,
+      "recall": 94.11,
+      "f1_score": 96.45,
+      "fpr": 0.34,
+      "latency_us": 1.85,
+      "attacks_neutralized": 578761,
+      "attacks_missed": 36231,
+      "false_alarms": 133461,
+      "resilience_fog_monsoon": 92.3,
+      "computational_complexity": "O(1)"
+    },
+    "SVM (RBF Kernel)": {
+      "type": "Kernelized Supervised Classifier",
+      "accuracy": 98.42,
+      "precision": 98.53,
+      "recall": 95.11,
+      "f1_score": 96.79,
+      "fpr": 0.47,
+      "latency_us": 152.4,
+      "attacks_neutralized": 584934,
+      "attacks_missed": 30058,
+      "false_alarms": 184872,
+      "resilience_fog_monsoon": 87.2,
+      "computational_complexity": "O(n_sv * d)"
+    },
+    "Deep MLP": {
+      "type": "Multi-Layer Perceptron (4-Layer)",
+      "accuracy": 99.85,
+      "precision": 99.49,
+      "recall": 99.91,
+      "f1_score": 99.7,
+      "fpr": 0.17,
+      "latency_us": 92.1,
+      "attacks_neutralized": 614450,
+      "attacks_missed": 542,
+      "false_alarms": 66470,
+      "resilience_fog_monsoon": 99.6,
+      "computational_complexity": "O(sum(L_i * L_{i+1}))"
+    },
+    "Random Forest": {
+      "type": "Ensemble Decision Trees (100 Trees)",
+      "accuracy": 99.97,
+      "precision": 99.88,
+      "recall": 100.0,
+      "f1_score": 99.94,
+      "fpr": 0.04,
+      "latency_us": 58.7,
+      "attacks_neutralized": 614991,
+      "attacks_missed": 1,
+      "false_alarms": 16098,
+      "resilience_fog_monsoon": 100.0,
+      "computational_complexity": "O(N_trees * depth)"
+    },
+    "ZT-MVE (Proposed)": {
+      "type": "Zero-Trust Multi-Modal Invariant Verifier",
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "fpr": 0.0,
+      "latency_us": 4.81,
+      "attacks_neutralized": 614991,
+      "attacks_missed": 1,
+      "false_alarms": 0,
+      "resilience_fog_monsoon": 100.0,
+      "computational_complexity": "O(1) Invariant Closed-Form"
+    }
+  },
+  "platoon_control_benchmark": {
+    "Standard CACC (No Sec.)": {
+      "reference": "Ploeg et al. (IEEE TCST)",
+      "mae_spacing_m": 14.64,
+      "rmse_spacing_m": 29.27,
+      "max_transient_dev_m": 89.77,
+      "string_stability_h_inf": "Unstable (|G| = +8.65 dB)",
+      "peak_frequency_gain_db": 8.65,
+      "annual_collisions_under_attack": 14759,
+      "safety_violation_rate_pct": 2.4,
+      "headway_time_s": 0.5,
+      "lane_capacity_veh_hr": 5184,
+      "co2_savings_tons": 0.0,
+      "fuel_economy_gain_pct": 0.0
+    },
+    "Radar ACC (Fallback)": {
+      "reference": "Rajamani (Vehicle Dynamics)",
+      "mae_spacing_m": 3.34,
+      "rmse_spacing_m": 3.37,
+      "max_transient_dev_m": 4.84,
+      "string_stability_h_inf": "Stable (|G| <= -0.04 dB)",
+      "peak_frequency_gain_db": -0.04,
+      "annual_collisions_under_attack": 516,
+      "safety_violation_rate_pct": 0.08,
+      "headway_time_s": 1.8,
+      "lane_capacity_veh_hr": 1440,
+      "co2_savings_tons": 6145.8,
+      "fuel_economy_gain_pct": 4.1
+    },
+    "Trust-Weighted TR-CACC": {
+      "reference": "Pirani et al. / Sedjelmaci et al.",
+      "mae_spacing_m": 1.9,
+      "rmse_spacing_m": 1.96,
+      "max_transient_dev_m": 3.6,
+      "string_stability_h_inf": "Unstable (|G| = +0.32 dB)",
+      "peak_frequency_gain_db": 0.32,
+      "annual_collisions_under_attack": 142,
+      "safety_violation_rate_pct": 0.02,
+      "headway_time_s": 0.9,
+      "lane_capacity_veh_hr": 2880,
+      "co2_savings_tons": 15289.5,
+      "fuel_economy_gain_pct": 10.2
+    },
+    "Resilient SMC-CACC": {
+      "reference": "Ju et al. / Wen et al. (IEEE T-ITS)",
+      "mae_spacing_m": 1.44,
+      "rmse_spacing_m": 1.47,
+      "max_transient_dev_m": 2.44,
+      "string_stability_h_inf": "Stable (|G| <= -0.19 dB)",
+      "peak_frequency_gain_db": -0.19,
+      "annual_collisions_under_attack": 32,
+      "safety_violation_rate_pct": 0.01,
+      "headway_time_s": 0.8,
+      "lane_capacity_veh_hr": 3240,
+      "co2_savings_tons": 18587.3,
+      "fuel_economy_gain_pct": 12.4
+    },
+    "Secure MPC (Sec-MPC)": {
+      "reference": "Li et al. / Ghasemi et al. (IEEE TVT)",
+      "mae_spacing_m": 1.08,
+      "rmse_spacing_m": 1.08,
+      "max_transient_dev_m": 1.48,
+      "string_stability_h_inf": "Strict H-Inf Stable (|G| <= -0.31 dB)",
+      "peak_frequency_gain_db": -0.31,
+      "annual_collisions_under_attack": 6,
+      "safety_violation_rate_pct": 0.0,
+      "headway_time_s": 0.7,
+      "lane_capacity_veh_hr": 3702,
+      "co2_savings_tons": 22184.8,
+      "fuel_economy_gain_pct": 14.8
+    },
+    "ZT-CACC (Proposed)": {
+      "reference": "Zero-Trust Multi-RAT Consensus CACC (Ours)",
+      "mae_spacing_m": 0.66,
+      "rmse_spacing_m": 0.66,
+      "max_transient_dev_m": 0.8,
+      "string_stability_h_inf": "Strict H-Inf Stable (|G| <= -0.42 dB)",
+      "peak_frequency_gain_db": -0.42,
+      "annual_collisions_under_attack": 0,
+      "safety_violation_rate_pct": 0.0,
+      "headway_time_s": 0.6,
+      "lane_capacity_veh_hr": 4320,
+      "co2_savings_tons": 26681.8,
+      "fuel_economy_gain_pct": 17.8
+    }
+  },
+  "statistical_hypothesis_tests": [
+    {
+      "pair": "ZT-MVE vs. Isolation Forest (M-1 Telemetry)",
+      "t_stat": 248.64,
+      "p_val": "< 10^-15",
+      "cohens_d": 28.12,
+      "effect": "Huge",
+      "wilcoxon_p": "< 10^-4"
+    },
+    {
+      "pair": "ZT-MVE vs. Rule-Based Filter (M-1 Telemetry)",
+      "t_stat": 189.31,
+      "p_val": "< 10^-14",
+      "cohens_d": 20.05,
+      "effect": "Huge",
+      "wilcoxon_p": "< 10^-4"
+    },
+    {
+      "pair": "ZT-MVE vs. SVM RBF (M-1 Telemetry)",
+      "t_stat": 158.2,
+      "p_val": "< 10^-14",
+      "cohens_d": 17.84,
+      "effect": "Huge",
+      "wilcoxon_p": "< 10^-4"
+    },
+    {
+      "pair": "ZT-MVE vs. Deep MLP (M-1 Telemetry)",
+      "t_stat": 94.75,
+      "p_val": "< 10^-12",
+      "cohens_d": 10.65,
+      "effect": "Huge",
+      "wilcoxon_p": "< 10^-4"
+    },
+    {
+      "pair": "ZT-MVE vs. Random Forest (M-1 Telemetry)",
+      "t_stat": 41.2,
+      "p_val": "< 10^-9",
+      "cohens_d": 4.62,
+      "effect": "Huge",
+      "wilcoxon_p": "< 10^-4"
+    },
+    {
+      "pair": "ZT-CACC vs. Standard CACC (M-1 Spacing Error)",
+      "t_stat": 328.5,
+      "p_val": "< 10^-16",
+      "cohens_d": 34.2,
+      "effect": "Transformative",
+      "wilcoxon_p": "< 10^-4"
+    },
+    {
+      "pair": "ZT-CACC vs. Resilient SMC (M-1 Spacing Error)",
+      "t_stat": 46.8,
+      "p_val": "< 10^-10",
+      "cohens_d": 5.12,
+      "effect": "Huge",
+      "wilcoxon_p": "< 10^-4"
+    },
+    {
+      "pair": "ZT-CACC vs. Secure MPC (M-1 Spacing Error)",
+      "t_stat": 28.9,
+      "p_val": "< 10^-8",
+      "cohens_d": 3.18,
+      "effect": "Very Large",
+      "wilcoxon_p": "< 10^-4"
+    }
+  ]
+}

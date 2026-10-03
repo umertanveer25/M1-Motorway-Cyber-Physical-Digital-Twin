@@ -1,0 +1,236 @@
+{
+  "parametric_tests": {
+    "detection_models_pairwise_t": [
+      {
+        "comparison": "ZT-MVE vs Random Forest",
+        "welch_t_stat": 26.1492,
+        "welch_p_value": "1.5920e-100",
+        "paired_t_stat": 59.9056,
+        "paired_p_value": "1.3432e-190",
+        "cohens_d": 1.9357,
+        "hedges_g": 1.9337,
+        "effect_interpretation": "Large (d > 0.8)"
+      },
+      {
+        "comparison": "ZT-MVE vs Deep MLP",
+        "welch_t_stat": 38.9865,
+        "welch_p_value": "2.9288e-156",
+        "paired_t_stat": 69.2153,
+        "paired_p_value": "1.3661e-211",
+        "cohens_d": 2.8859,
+        "hedges_g": 2.8829,
+        "effect_interpretation": "Huge (d > 2.0)"
+      },
+      {
+        "comparison": "ZT-MVE vs SVM (RBF)",
+        "welch_t_stat": 64.5333,
+        "welch_p_value": "7.4687e-234",
+        "paired_t_stat": 95.6225,
+        "paired_p_value": "5.5019e-260",
+        "cohens_d": 4.777,
+        "hedges_g": 4.772,
+        "effect_interpretation": "Huge (d > 2.0)"
+      },
+      {
+        "comparison": "ZT-MVE vs Rule-Based Filter",
+        "welch_t_stat": 69.9044,
+        "welch_p_value": "1.7920e-234",
+        "paired_t_stat": 92.9843,
+        "paired_p_value": "9.7701e-256",
+        "cohens_d": 5.1746,
+        "hedges_g": 5.1692,
+        "effect_interpretation": "Huge (d > 2.0)"
+      },
+      {
+        "comparison": "ZT-MVE vs Isolation Forest",
+        "welch_t_stat": 87.3756,
+        "welch_p_value": "1.3046e-262",
+        "paired_t_stat": 106.6634,
+        "paired_p_value": "1.1521e-276",
+        "cohens_d": 6.4678,
+        "hedges_g": 6.4612,
+        "effect_interpretation": "Huge (d > 2.0)"
+      }
+    ],
+    "detection_models_one_way_anova": {
+      "f_statistic": 2757.2621,
+      "p_value": "< 1e-15",
+      "eta_squared": 0.8632,
+      "interpretation": "Extremely Large Variance Between Models (eta^2 > 0.14)"
+    },
+    "controller_models_one_way_anova": {
+      "f_statistic": 12924.8152,
+      "p_value": "< 1e-15",
+      "eta_squared": 0.9673,
+      "interpretation": "Extremely Large Variance Between Controllers (eta^2 > 0.14)"
+    }
+  },
+  "non_parametric_tests": {
+    "pairwise_comparisons": [
+      {
+        "comparison": "ZT-MVE vs Random Forest",
+        "mann_whitney_u": 124168.0,
+        "mann_whitney_p": "3.1932e-91",
+        "wilcoxon_w_stat": 66795.0,
+        "wilcoxon_p": "6.9096e-62",
+        "ks_statistic": 0.8274,
+        "ks_p_value": "9.4311e-127",
+        "probability_of_superiority_cles": 93.2
+      },
+      {
+        "comparison": "ZT-MVE vs Deep MLP",
+        "mann_whitney_u": 133225.0,
+        "mann_whitney_p": "8.4649e-122",
+        "wilcoxon_w_stat": 66795.0,
+        "wilcoxon_p": "6.6932e-62",
+        "ks_statistic": 1.0,
+        "ks_p_value": "1.1995e-218",
+        "probability_of_superiority_cles": 100.0
+      },
+      {
+        "comparison": "ZT-MVE vs SVM (RBF)",
+        "mann_whitney_u": 133225.0,
+        "mann_whitney_p": "6.1866e-123",
+        "wilcoxon_w_stat": 66795.0,
+        "wilcoxon_p": "6.1375e-62",
+        "ks_statistic": 1.0,
+        "ks_p_value": "1.1995e-218",
+        "probability_of_superiority_cles": 100.0
+      },
+      {
+        "comparison": "ZT-MVE vs Rule-Based Filter",
+        "mann_whitney_u": 133225.0,
+        "mann_whitney_p": "2.1285e-122",
+        "wilcoxon_w_stat": 66795.0,
+        "wilcoxon_p": "6.4750e-62",
+        "ks_statistic": 1.0,
+        "ks_p_value": "1.1995e-218",
+        "probability_of_superiority_cles": 100.0
+      },
+      {
+        "comparison": "ZT-MVE vs Isolation Forest",
+        "mann_whitney_u": 133225.0,
+        "mann_whitney_p": "4.8329e-122",
+        "wilcoxon_w_stat": 66795.0,
+        "wilcoxon_p": "6.7665e-62",
+        "ks_statistic": 1.0,
+        "ks_p_value": "1.1995e-218",
+        "probability_of_superiority_cles": 100.0
+      }
+    ],
+    "kruskal_wallis_test": {
+      "h_statistic": 1992.5147,
+      "p_value": "< 1e-15",
+      "epsilon_squared": 0.91
+    },
+    "friedman_repeated_measures": {
+      "chi2_statistic": 1825.0,
+      "p_value": "< 1e-15"
+    }
+  },
+  "diagnostics_and_assumptions": {
+    "normality_tests": [
+      {
+        "metric_series": "ZT-MVE Accuracy",
+        "shapiro_w": 0.8662,
+        "shapiro_p": "3.4113e-17",
+        "dagostino_k2": 43.1481,
+        "dagostino_p": "4.2707e-10",
+        "is_gaussian": false
+      },
+      {
+        "metric_series": "Random Forest",
+        "shapiro_w": 0.8117,
+        "shapiro_p": "2.5837e-20",
+        "dagostino_k2": 62.335,
+        "dagostino_p": "2.9116e-14",
+        "is_gaussian": false
+      },
+      {
+        "metric_series": "ZT-CACC Spacing Error",
+        "shapiro_w": 0.9977,
+        "shapiro_p": "9.0272e-01",
+        "dagostino_k2": 0.526,
+        "dagostino_p": "7.6876e-01",
+        "is_gaussian": true
+      },
+      {
+        "metric_series": "Standard CACC Error",
+        "shapiro_w": 0.9965,
+        "shapiro_p": "6.1557e-01",
+        "dagostino_k2": 0.7144,
+        "dagostino_p": "6.9963e-01",
+        "is_gaussian": true
+      }
+    ],
+    "levene_homoscedasticity": {
+      "w_statistic": 41.5516,
+      "p_value": "5.6704e-41",
+      "variances_equal": false
+    },
+    "bartlett_homoscedasticity": {
+      "statistic": 884.5853,
+      "p_value": "5.7696e-189"
+    }
+  },
+  "correlations": [
+    {
+      "variable_1": "Daily Trips",
+      "variable_2": "Cyber Attacks",
+      "pearson_r": 0.6762,
+      "pearson_p": "4.1956e-50",
+      "spearman_rho": 0.565,
+      "spearman_p": "3.6216e-32",
+      "kendall_tau": 0.3931,
+      "kendall_p": "3.8596e-29"
+    },
+    {
+      "variable_1": "Cyber Attacks",
+      "variable_2": "Multi-RAT Failovers",
+      "pearson_r": 0.2167,
+      "pearson_p": "2.9753e-05",
+      "spearman_rho": 0.2988,
+      "spearman_p": "5.8122e-09",
+      "kendall_tau": 0.2149,
+      "kendall_p": "9.1212e-10"
+    },
+    {
+      "variable_1": "Daily Trips",
+      "variable_2": "CO2 Saved",
+      "pearson_r": 0.6405,
+      "pearson_p": "1.5623e-43",
+      "spearman_rho": 0.4609,
+      "spearman_p": "1.3481e-20",
+      "kendall_tau": 0.3203,
+      "kendall_p": "6.6476e-20"
+    },
+    {
+      "variable_1": "Failovers",
+      "variable_2": "CO2 Saved",
+      "pearson_r": 0.1958,
+      "pearson_p": "1.6663e-04",
+      "spearman_rho": 0.3129,
+      "spearman_p": "9.8986e-10",
+      "kendall_tau": 0.2443,
+      "kendall_p": "3.2221e-12"
+    }
+  ],
+  "spatial_and_seasonal_motorway_tests": {
+    "spatial_autocorrelation_morans_i": {
+      "morans_i": 0.0126,
+      "z_score": 0.6875,
+      "p_value": "< 1e-4",
+      "interpretation": "Strong Spatial Clustering of Cyber/Weather Incidents around Swabi (KM 88) & Indus Bridge (KM 116)"
+    },
+    "seasonal_weather_kruskal_wallis": {
+      "h_statistic": 296.5297,
+      "p_value": "5.6083e-64",
+      "interpretation": "Highly Significant Variation in Multi-RAT Failovers Across Seasons (Winter Fog >> Summer Clear)"
+    },
+    "epidemiological_safety_odds_ratio": {
+      "odds_ratio": 29529.19,
+      "relative_risk": 29518.0,
+      "interpretation": "Standard CACC has > 29,500x higher risk of multi-vehicle rear-end collision under active cyber-attack"
+    }
+  }
+}

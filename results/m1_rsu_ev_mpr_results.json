@@ -1,0 +1,1903 @@
+{
+  "metadata": {
+    "corridor": "M-1 Motorway (Peshawar - Islamabad, 155 km)",
+    "total_rsus_mapped": 87,
+    "rsu_spacing_km": 1.8,
+    "service_areas_evaluated": 2
+  },
+  "rsu_infrastructure_grid": [
+    {
+      "rsu_id": "M1-RSU-001",
+      "corridor_km": 0.0,
+      "latitude": 34.053,
+      "longitude": 71.693,
+      "zone": "Peshawar Plains",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.03,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-002",
+      "corridor_km": 1.8,
+      "latitude": 34.04916,
+      "longitude": 71.70695,
+      "zone": "Peshawar Plains",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.23,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-003",
+      "corridor_km": 3.6,
+      "latitude": 34.04532,
+      "longitude": 71.72089,
+      "zone": "Peshawar Plains",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.89,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-004",
+      "corridor_km": 5.4,
+      "latitude": 34.04147,
+      "longitude": 71.73484,
+      "zone": "Peshawar Plains",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.25,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-005",
+      "corridor_km": 7.2,
+      "latitude": 34.03762,
+      "longitude": 71.74879,
+      "zone": "Peshawar Plains",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.38,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-006",
+      "corridor_km": 9.0,
+      "latitude": 34.03376,
+      "longitude": 71.76274,
+      "zone": "Peshawar Plains",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.8,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-007",
+      "corridor_km": 10.8,
+      "latitude": 34.0299,
+      "longitude": 71.77668,
+      "zone": "Peshawar Plains",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.01,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-008",
+      "corridor_km": 12.6,
+      "latitude": 34.02603,
+      "longitude": 71.79063,
+      "zone": "Peshawar Plains",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.89,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-009",
+      "corridor_km": 14.4,
+      "latitude": 34.02215,
+      "longitude": 71.80458,
+      "zone": "Peshawar Plains",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.2,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-010",
+      "corridor_km": 16.2,
+      "latitude": 34.01826,
+      "longitude": 71.81852,
+      "zone": "Peshawar Plains",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.36,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-011",
+      "corridor_km": 18.0,
+      "latitude": 34.01435,
+      "longitude": 71.83247,
+      "zone": "Peshawar Plains",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.12,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-012",
+      "corridor_km": 19.8,
+      "latitude": 34.01043,
+      "longitude": 71.84642,
+      "zone": "Peshawar Plains",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.93,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-013",
+      "corridor_km": 21.6,
+      "latitude": 34.00649,
+      "longitude": 71.86037,
+      "zone": "Peshawar Plains",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.28,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-014",
+      "corridor_km": 23.4,
+      "latitude": 34.00254,
+      "longitude": 71.87431,
+      "zone": "Peshawar Plains",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.07,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-015",
+      "corridor_km": 25.2,
+      "latitude": 33.99857,
+      "longitude": 71.88826,
+      "zone": "Peshawar Plains",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.86,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-016",
+      "corridor_km": 27.0,
+      "latitude": 33.99458,
+      "longitude": 71.90221,
+      "zone": "Peshawar Plains",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.31,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-017",
+      "corridor_km": 28.8,
+      "latitude": 33.99057,
+      "longitude": 71.91615,
+      "zone": "Peshawar Plains",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.23,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-018",
+      "corridor_km": 30.6,
+      "latitude": 33.98653,
+      "longitude": 71.9301,
+      "zone": "Rashakai CPEC SEZ Hub",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.19,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-019",
+      "corridor_km": 32.4,
+      "latitude": 33.98248,
+      "longitude": 71.94405,
+      "zone": "Rashakai CPEC SEZ Hub",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.13,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-020",
+      "corridor_km": 34.2,
+      "latitude": 33.9784,
+      "longitude": 71.95799,
+      "zone": "Rashakai CPEC SEZ Hub",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.91,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-021",
+      "corridor_km": 36.0,
+      "latitude": 33.97429,
+      "longitude": 71.97194,
+      "zone": "Rashakai CPEC SEZ Hub",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.19,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-022",
+      "corridor_km": 37.8,
+      "latitude": 33.97016,
+      "longitude": 71.98589,
+      "zone": "Rashakai CPEC SEZ Hub",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.05,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-023",
+      "corridor_km": 39.6,
+      "latitude": 33.96599,
+      "longitude": 71.99984,
+      "zone": "Rashakai CPEC SEZ Hub",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.33,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-024",
+      "corridor_km": 41.4,
+      "latitude": 33.96181,
+      "longitude": 72.01378,
+      "zone": "Rashakai CPEC SEZ Hub",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.22,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-025",
+      "corridor_km": 43.2,
+      "latitude": 33.95759,
+      "longitude": 72.02773,
+      "zone": "Rashakai CPEC SEZ Hub",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.02,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-026",
+      "corridor_km": 45.0,
+      "latitude": 33.95334,
+      "longitude": 72.04168,
+      "zone": "Rashakai CPEC SEZ Hub",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.29,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-027",
+      "corridor_km": 46.8,
+      "latitude": 33.94905,
+      "longitude": 72.05562,
+      "zone": "Rashakai CPEC SEZ Hub",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.81,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-028",
+      "corridor_km": 48.6,
+      "latitude": 33.94474,
+      "longitude": 72.06957,
+      "zone": "Rashakai CPEC SEZ Hub",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.34,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-029",
+      "corridor_km": 50.4,
+      "latitude": 33.94039,
+      "longitude": 72.08352,
+      "zone": "Rashakai CPEC SEZ Hub",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.05,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-030",
+      "corridor_km": 52.2,
+      "latitude": 33.93601,
+      "longitude": 72.09747,
+      "zone": "Rashakai CPEC SEZ Hub",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.12,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-031",
+      "corridor_km": 54.0,
+      "latitude": 33.9316,
+      "longitude": 72.11141,
+      "zone": "Rashakai CPEC SEZ Hub",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.81,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-032",
+      "corridor_km": 55.8,
+      "latitude": 33.92714,
+      "longitude": 72.12536,
+      "zone": "Rashakai CPEC SEZ Hub",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.85,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-033",
+      "corridor_km": 57.6,
+      "latitude": 33.92266,
+      "longitude": 72.13931,
+      "zone": "Rashakai CPEC SEZ Hub",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.16,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-034",
+      "corridor_km": 59.4,
+      "latitude": 33.91813,
+      "longitude": 72.15325,
+      "zone": "Rashakai CPEC SEZ Hub",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.12,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-035",
+      "corridor_km": 61.2,
+      "latitude": 33.91357,
+      "longitude": 72.1672,
+      "zone": "Swabi Fog & Agricultural Zone",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.82,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-036",
+      "corridor_km": 63.0,
+      "latitude": 33.90897,
+      "longitude": 72.18115,
+      "zone": "Swabi Fog & Agricultural Zone",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.24,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-037",
+      "corridor_km": 64.8,
+      "latitude": 33.90433,
+      "longitude": 72.1951,
+      "zone": "Swabi Fog & Agricultural Zone",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.12,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-038",
+      "corridor_km": 66.6,
+      "latitude": 33.89966,
+      "longitude": 72.20904,
+      "zone": "Swabi Fog & Agricultural Zone",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.39,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-039",
+      "corridor_km": 68.4,
+      "latitude": 33.89494,
+      "longitude": 72.22299,
+      "zone": "Swabi Fog & Agricultural Zone",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.21,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-040",
+      "corridor_km": 70.2,
+      "latitude": 33.89019,
+      "longitude": 72.23694,
+      "zone": "Swabi Fog & Agricultural Zone",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.06,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-041",
+      "corridor_km": 72.0,
+      "latitude": 33.88539,
+      "longitude": 72.25088,
+      "zone": "Swabi Fog & Agricultural Zone",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.87,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-042",
+      "corridor_km": 73.8,
+      "latitude": 33.88056,
+      "longitude": 72.26483,
+      "zone": "Swabi Fog & Agricultural Zone",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.92,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-043",
+      "corridor_km": 75.6,
+      "latitude": 33.87569,
+      "longitude": 72.27878,
+      "zone": "Swabi Fog & Agricultural Zone",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.4,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-044",
+      "corridor_km": 77.4,
+      "latitude": 33.87077,
+      "longitude": 72.29273,
+      "zone": "Swabi Fog & Agricultural Zone",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.92,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-045",
+      "corridor_km": 79.2,
+      "latitude": 33.86582,
+      "longitude": 72.30667,
+      "zone": "Swabi Fog & Agricultural Zone",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.83,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-046",
+      "corridor_km": 81.0,
+      "latitude": 33.86083,
+      "longitude": 72.32062,
+      "zone": "Swabi Fog & Agricultural Zone",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.23,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-047",
+      "corridor_km": 82.8,
+      "latitude": 33.85579,
+      "longitude": 72.33457,
+      "zone": "Swabi Fog & Agricultural Zone",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.97,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-048",
+      "corridor_km": 84.6,
+      "latitude": 33.85072,
+      "longitude": 72.34851,
+      "zone": "Swabi Fog & Agricultural Zone",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.28,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-049",
+      "corridor_km": 86.4,
+      "latitude": 33.84561,
+      "longitude": 72.36246,
+      "zone": "Swabi Fog & Agricultural Zone",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.22,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-050",
+      "corridor_km": 88.2,
+      "latitude": 33.84046,
+      "longitude": 72.37641,
+      "zone": "Swabi Fog & Agricultural Zone",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.35,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-051",
+      "corridor_km": 90.0,
+      "latitude": 33.83527,
+      "longitude": 72.39035,
+      "zone": "Swabi Fog & Agricultural Zone",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.39,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-052",
+      "corridor_km": 91.8,
+      "latitude": 33.83004,
+      "longitude": 72.4043,
+      "zone": "Swabi Fog & Agricultural Zone",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.83,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-053",
+      "corridor_km": 93.6,
+      "latitude": 33.82477,
+      "longitude": 72.41825,
+      "zone": "Swabi Fog & Agricultural Zone",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.86,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-054",
+      "corridor_km": 95.4,
+      "latitude": 33.81947,
+      "longitude": 72.4322,
+      "zone": "Indus River Bridge Microclimate",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.06,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-055",
+      "corridor_km": 97.2,
+      "latitude": 33.81412,
+      "longitude": 72.44614,
+      "zone": "Indus River Bridge Microclimate",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.93,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-056",
+      "corridor_km": 99.0,
+      "latitude": 33.80874,
+      "longitude": 72.46009,
+      "zone": "Indus River Bridge Microclimate",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.4,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-057",
+      "corridor_km": 100.8,
+      "latitude": 33.80333,
+      "longitude": 72.47404,
+      "zone": "Indus River Bridge Microclimate",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.01,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-058",
+      "corridor_km": 102.6,
+      "latitude": 33.79788,
+      "longitude": 72.48798,
+      "zone": "Indus River Bridge Microclimate",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.02,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-059",
+      "corridor_km": 104.4,
+      "latitude": 33.79239,
+      "longitude": 72.50193,
+      "zone": "Indus River Bridge Microclimate",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.36,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-060",
+      "corridor_km": 106.2,
+      "latitude": 33.78687,
+      "longitude": 72.51588,
+      "zone": "Indus River Bridge Microclimate",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.3,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-061",
+      "corridor_km": 108.0,
+      "latitude": 33.78132,
+      "longitude": 72.52983,
+      "zone": "Indus River Bridge Microclimate",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.12,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-062",
+      "corridor_km": 109.8,
+      "latitude": 33.77573,
+      "longitude": 72.54377,
+      "zone": "Indus River Bridge Microclimate",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.93,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-063",
+      "corridor_km": 111.6,
+      "latitude": 33.77012,
+      "longitude": 72.55772,
+      "zone": "Indus River Bridge Microclimate",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.14,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-064",
+      "corridor_km": 113.4,
+      "latitude": 33.76447,
+      "longitude": 72.57167,
+      "zone": "Indus River Bridge Microclimate",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.07,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-065",
+      "corridor_km": 115.2,
+      "latitude": 33.75879,
+      "longitude": 72.58561,
+      "zone": "Indus River Bridge Microclimate",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.38,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-066",
+      "corridor_km": 117.0,
+      "latitude": 33.75308,
+      "longitude": 72.59956,
+      "zone": "Indus River Bridge Microclimate",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.94,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-067",
+      "corridor_km": 118.8,
+      "latitude": 33.74735,
+      "longitude": 72.61351,
+      "zone": "Indus River Bridge Microclimate",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.28,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-068",
+      "corridor_km": 120.6,
+      "latitude": 33.74159,
+      "longitude": 72.62746,
+      "zone": "Burhan Hazara Gateway",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.98,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-069",
+      "corridor_km": 122.4,
+      "latitude": 33.7358,
+      "longitude": 72.6414,
+      "zone": "Burhan Hazara Gateway",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.16,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-070",
+      "corridor_km": 124.2,
+      "latitude": 33.72999,
+      "longitude": 72.65535,
+      "zone": "Burhan Hazara Gateway",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.84,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-071",
+      "corridor_km": 126.0,
+      "latitude": 33.72415,
+      "longitude": 72.6693,
+      "zone": "Burhan Hazara Gateway",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.29,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-072",
+      "corridor_km": 127.8,
+      "latitude": 33.71829,
+      "longitude": 72.68324,
+      "zone": "Burhan Hazara Gateway",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.07,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-073",
+      "corridor_km": 129.6,
+      "latitude": 33.71242,
+      "longitude": 72.69719,
+      "zone": "Burhan Hazara Gateway",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.1,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-074",
+      "corridor_km": 131.4,
+      "latitude": 33.70652,
+      "longitude": 72.71114,
+      "zone": "Burhan Hazara Gateway",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.01,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-075",
+      "corridor_km": 133.2,
+      "latitude": 33.7006,
+      "longitude": 72.72509,
+      "zone": "Burhan Hazara Gateway",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.2,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-076",
+      "corridor_km": 135.0,
+      "latitude": 33.69467,
+      "longitude": 72.73903,
+      "zone": "Burhan Hazara Gateway",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.36,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-077",
+      "corridor_km": 136.8,
+      "latitude": 33.68872,
+      "longitude": 72.75298,
+      "zone": "Burhan Hazara Gateway",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.07,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-078",
+      "corridor_km": 138.6,
+      "latitude": 33.68276,
+      "longitude": 72.76693,
+      "zone": "Burhan Hazara Gateway",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.92,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-079",
+      "corridor_km": 140.4,
+      "latitude": 33.67678,
+      "longitude": 72.78087,
+      "zone": "Islamabad Capital Approaches",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.98,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-080",
+      "corridor_km": 142.2,
+      "latitude": 33.67079,
+      "longitude": 72.79482,
+      "zone": "Islamabad Capital Approaches",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.29,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-081",
+      "corridor_km": 144.0,
+      "latitude": 33.66479,
+      "longitude": 72.80877,
+      "zone": "Islamabad Capital Approaches",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.28,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-082",
+      "corridor_km": 145.8,
+      "latitude": 33.65879,
+      "longitude": 72.82271,
+      "zone": "Islamabad Capital Approaches",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.11,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-083",
+      "corridor_km": 147.6,
+      "latitude": 33.65277,
+      "longitude": 72.83666,
+      "zone": "Islamabad Capital Approaches",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.27,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-084",
+      "corridor_km": 149.4,
+      "latitude": 33.64675,
+      "longitude": 72.85061,
+      "zone": "Islamabad Capital Approaches",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.92,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-085",
+      "corridor_km": 151.2,
+      "latitude": 33.64073,
+      "longitude": 72.86456,
+      "zone": "Islamabad Capital Approaches",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.25,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-086",
+      "corridor_km": 153.0,
+      "latitude": 33.6347,
+      "longitude": 72.8785,
+      "zone": "Islamabad Capital Approaches",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 2.21,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    },
+    {
+      "rsu_id": "M1-RSU-087",
+      "corridor_km": 154.8,
+      "latitude": 33.62867,
+      "longitude": 72.89245,
+      "zone": "Islamabad Capital Approaches",
+      "edge_compute": {
+        "processor": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+        "latency_ms": 1.8,
+        "v2x_radios": [
+          "5G-V2X Sidelink (PC5)",
+          "ITS-G5 5.9GHz DSRC (IEEE 802.11p)",
+          "Infrared VLC Transceiver"
+        ],
+        "backhaul": "10 Gbps Redundant Underground Fiber Ring (NHA RoW)",
+        "power_backup": "5 kW Solar PV Array + 15 kWh LFP Battery (72h Off-Grid Resilience)"
+      },
+      "status": "Operational (Online)"
+    }
+  ],
+  "mixed_autonomy_mpr_curves": [
+    {
+      "mpr_pct": 0,
+      "average_time_headway_s": 1.4,
+      "lane_capacity_veh_hr": 1928,
+      "capacity_gain_pct": 0.0,
+      "fuel_savings_pct": 0.0,
+      "annual_co2_saved_tons": 0.0,
+      "unprotected_crashes_under_attack": 0,
+      "zt_cacc_crashes": 0
+    },
+    {
+      "mpr_pct": 10,
+      "average_time_headway_s": 1.31,
+      "lane_capacity_veh_hr": 2066,
+      "capacity_gain_pct": 7.2,
+      "fuel_savings_pct": 1.8,
+      "annual_co2_saved_tons": 2698.2,
+      "unprotected_crashes_under_attack": 2914,
+      "zt_cacc_crashes": 0
+    },
+    {
+      "mpr_pct": 20,
+      "average_time_headway_s": 1.22,
+      "lane_capacity_veh_hr": 2220,
+      "capacity_gain_pct": 15.1,
+      "fuel_savings_pct": 3.7,
+      "annual_co2_saved_tons": 5546.2,
+      "unprotected_crashes_under_attack": 5253,
+      "zt_cacc_crashes": 0
+    },
+    {
+      "mpr_pct": 30,
+      "average_time_headway_s": 1.13,
+      "lane_capacity_veh_hr": 2392,
+      "capacity_gain_pct": 24.1,
+      "fuel_savings_pct": 5.6,
+      "annual_co2_saved_tons": 8394.3,
+      "unprotected_crashes_under_attack": 7130,
+      "zt_cacc_crashes": 0
+    },
+    {
+      "mpr_pct": 40,
+      "average_time_headway_s": 1.04,
+      "lane_capacity_veh_hr": 2586,
+      "capacity_gain_pct": 34.1,
+      "fuel_savings_pct": 7.5,
+      "annual_co2_saved_tons": 11242.3,
+      "unprotected_crashes_under_attack": 8637,
+      "zt_cacc_crashes": 0
+    },
+    {
+      "mpr_pct": 50,
+      "average_time_headway_s": 0.96,
+      "lane_capacity_veh_hr": 2805,
+      "capacity_gain_pct": 45.5,
+      "fuel_savings_pct": 9.5,
+      "annual_co2_saved_tons": 14240.3,
+      "unprotected_crashes_under_attack": 9846,
+      "zt_cacc_crashes": 0
+    },
+    {
+      "mpr_pct": 60,
+      "average_time_headway_s": 0.88,
+      "lane_capacity_veh_hr": 3054,
+      "capacity_gain_pct": 58.4,
+      "fuel_savings_pct": 11.6,
+      "annual_co2_saved_tons": 17388.1,
+      "unprotected_crashes_under_attack": 10816,
+      "zt_cacc_crashes": 0
+    },
+    {
+      "mpr_pct": 70,
+      "average_time_headway_s": 0.81,
+      "lane_capacity_veh_hr": 3339,
+      "capacity_gain_pct": 73.2,
+      "fuel_savings_pct": 13.7,
+      "annual_co2_saved_tons": 20536.0,
+      "unprotected_crashes_under_attack": 11594,
+      "zt_cacc_crashes": 0
+    },
+    {
+      "mpr_pct": 80,
+      "average_time_headway_s": 0.74,
+      "lane_capacity_veh_hr": 3668,
+      "capacity_gain_pct": 90.2,
+      "fuel_savings_pct": 15.8,
+      "annual_co2_saved_tons": 23683.8,
+      "unprotected_crashes_under_attack": 12219,
+      "zt_cacc_crashes": 0
+    },
+    {
+      "mpr_pct": 90,
+      "average_time_headway_s": 0.67,
+      "lane_capacity_veh_hr": 4051,
+      "capacity_gain_pct": 110.1,
+      "fuel_savings_pct": 18.0,
+      "annual_co2_saved_tons": 26981.5,
+      "unprotected_crashes_under_attack": 12721,
+      "zt_cacc_crashes": 0
+    },
+    {
+      "mpr_pct": 100,
+      "average_time_headway_s": 0.6,
+      "lane_capacity_veh_hr": 4500,
+      "capacity_gain_pct": 133.4,
+      "fuel_savings_pct": 20.3,
+      "annual_co2_saved_tons": 30429.2,
+      "unprotected_crashes_under_attack": 13123,
+      "zt_cacc_crashes": 0
+    }
+  ],
+  "ev_battery_dynamics": {
+    "km_distance_axis": [
+      0.0,
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0,
+      30.0,
+      35.0,
+      40.0,
+      45.0,
+      50.0,
+      55.0,
+      60.0,
+      65.0,
+      70.0,
+      75.0,
+      80.0,
+      85.0,
+      90.0,
+      95.0,
+      100.0,
+      105.0,
+      110.0,
+      115.0,
+      120.0,
+      125.0,
+      130.0,
+      135.0,
+      140.0,
+      145.0,
+      150.0,
+      155.0
+    ],
+    "ev_soc_standalone_pct": [
+      100.0,
+      98.8,
+      97.6,
+      96.4,
+      95.2,
+      94.1,
+      92.9,
+      91.7,
+      90.5,
+      89.3,
+      88.1,
+      86.9,
+      85.7,
+      84.5,
+      83.4,
+      82.2,
+      81.0,
+      79.8,
+      78.6,
+      77.3,
+      76.0,
+      74.7,
+      73.4,
+      72.1,
+      70.8,
+      69.5,
+      68.2,
+      66.9,
+      65.6,
+      64.3,
+      63.0,
+      61.7
+    ],
+    "ev_soc_zt_cacc_platooned_pct": [
+      100.0,
+      99.0,
+      98.0,
+      97.0,
+      96.0,
+      95.0,
+      94.0,
+      93.0,
+      92.0,
+      91.0,
+      90.0,
+      89.0,
+      88.0,
+      87.0,
+      86.0,
+      85.0,
+      84.0,
+      83.0,
+      82.0,
+      80.9,
+      79.8,
+      78.7,
+      77.6,
+      76.5,
+      75.4,
+      74.3,
+      73.2,
+      72.1,
+      71.0,
+      69.9,
+      68.9,
+      67.8
+    ],
+    "net_battery_saved_per_trip_kwh": 4.4,
+    "annual_m1_electric_energy_saved_mwh": 34280.0
+  },
+  "service_area_charging_infrastructure": [
+    {
+      "name": "Rashakai CPEC SEZ Service Area (KM 45)",
+      "km": 45.1,
+      "chargers_350kw_ultra_fast": 16,
+      "chargers_150kw_fast": 32,
+      "peak_grid_power_mw": 10.4,
+      "solar_canopy_capacity_mw": 2.5,
+      "bess_battery_storage_mwh": 8.0,
+      "daily_ev_recharges_served": 1850
+    },
+    {
+      "name": "Indus River / Ghazi Service Area (KM 116)",
+      "km": 115.8,
+      "chargers_350kw_ultra_fast": 20,
+      "chargers_150kw_fast": 40,
+      "peak_grid_power_mw": 13.0,
+      "solar_canopy_capacity_mw": 3.2,
+      "bess_battery_storage_mwh": 10.0,
+      "daily_ev_recharges_served": 2420
+    }
+  ]
+}

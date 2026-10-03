@@ -1306,24 +1306,34 @@
                 carGroup.add(w);
             });
 
-            // Front Headlights (Facing Forward down highway towards -Z: z = -2.12)
-            const headGeo = new THREE.BoxGeometry(0.32, 0.15, 0.06);
-            const headMat = new THREE.MeshBasicMaterial({ color: 0xffffff }); // Bright Xenon White Headlights
+            // ==========================================
+            // FRONT HEADLIGHTS (Facing Forward into -Z: z = -2.12)
+            // ==========================================
+            const headGeo = new THREE.BoxGeometry(0.38, 0.16, 0.08);
+            const headMat = new THREE.MeshBasicMaterial({ color: 0xffffff }); // Bright Xenon White Front Headlights
             const hl1 = new THREE.Mesh(headGeo, headMat); hl1.position.set(-0.62, 0.45, -2.12);
             const hl2 = new THREE.Mesh(headGeo, headMat); hl2.position.set(0.62, 0.45, -2.12);
             carGroup.add(hl1); carGroup.add(hl2);
 
-            // Rear Taillights (Facing Chase Camera behind vehicle towards +Z: z = +2.12)
-            const tailGeo = new THREE.BoxGeometry(0.32, 0.15, 0.06);
-            const tailMat = new THREE.MeshBasicMaterial({ color: 0xef4444 }); // Bright Crimson Red Taillights
+            // ==========================================
+            // REAR TAILLIGHTS (Facing Chase Camera at +Z: z = +2.12)
+            // ==========================================
+            const tailGeo = new THREE.BoxGeometry(0.40, 0.18, 0.08);
+            const tailMat = new THREE.MeshBasicMaterial({ color: 0xff0000 }); // Vibrant Crimson Red Rear Taillights
             const tl1 = new THREE.Mesh(tailGeo, tailMat); tl1.position.set(-0.62, 0.45, 2.12);
             const tl2 = new THREE.Mesh(tailGeo, tailMat); tl2.position.set(0.62, 0.45, 2.12);
             carGroup.add(tl1); carGroup.add(tl2);
 
-            // Rear Center High-Mount Stop Lamp (CHMSL LED)
-            const chmslGeo = new THREE.BoxGeometry(0.6, 0.06, 0.05);
+            // Full-Width Rear LED Light Bar (Modern Automotive Connected Signature)
+            const rearBarGeo = new THREE.BoxGeometry(1.64, 0.08, 0.06);
+            const rearBar = new THREE.Mesh(rearBarGeo, tailMat);
+            rearBar.position.set(0, 0.52, 2.12);
+            carGroup.add(rearBar);
+
+            // Rear Center High-Mount Stop Lamp (CHMSL LED on rear roofline)
+            const chmslGeo = new THREE.BoxGeometry(0.7, 0.07, 0.06);
             const chmsl = new THREE.Mesh(chmslGeo, tailMat);
-            chmsl.position.set(0, 1.22, 0.9);
+            chmsl.position.set(0, 1.22, 1.3);
             carGroup.add(chmsl);
 
             return carGroup;

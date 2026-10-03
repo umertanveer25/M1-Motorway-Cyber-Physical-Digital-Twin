@@ -37,17 +37,17 @@ os.makedirs(assets_dir, exist_ok=True)
 # -------------------------------------------------------------
 # FIGURE 1: 155 KM M-1 ELEVATION PROFILE & 87 RSU DISTRIBUTION
 # -------------------------------------------------------------
-fig, ax1 = plt.subplots(figsize=(12, 5), dpi=300)
+fig, ax1 = plt.subplots(figsize=(13, 5.2), dpi=300)
 
-kms = np.linspace(0, 155, 200)
+kms = np.linspace(0, 155, 250)
 elev = 345.0 + 85.0 * np.sin(kms / 25.0) + 120.0 * (kms / 155.0)**1.5 + 40.0 * np.sin(kms / 8.0)
 
 ax1.plot(kms, elev, color='#0284c7', lw=2.5, label='M-1 Elevation Profile (m ASL)')
-ax1.fill_between(kms, elev, 300, color='#0284c7', alpha=0.12)
-ax1.set_xlabel('Corridor Distance from Peshawar Toll Plaza (km)', fontweight='bold')
-ax1.set_ylabel('Elevation Above Sea Level (m)', color='#0284c7', fontweight='bold')
-ax1.set_xlim(0, 155)
-ax1.set_ylim(300, 630)
+ax1.fill_between(kms, elev, 260, color='#0284c7', alpha=0.10)
+ax1.set_xlabel('Corridor Distance from Peshawar Toll Plaza (km)', fontweight='bold', labelpad=8)
+ax1.set_ylabel('Elevation Above Sea Level (m)', color='#0284c7', fontweight='bold', labelpad=8)
+ax1.set_xlim(-2, 157)
+ax1.set_ylim(260, 640)
 
 interchanges = [
     (0.0, 'Peshawar Toll'), (15.2, 'Charsadda'), (39.4, 'Rashakai'),
@@ -57,13 +57,13 @@ interchanges = [
 
 for km, name in interchanges:
     y_val = 345.0 + 85.0 * np.sin(km / 25.0) + 120.0 * (km / 155.0)**1.5 + 40.0 * np.sin(km / 8.0)
-    ax1.axvline(km, color='#059669', linestyle=':', alpha=0.7, lw=1.2)
+    ax1.axvline(km, color='#059669', linestyle=':', alpha=0.65, lw=1.2)
     ax1.scatter(km, y_val, color='#059669', s=45, zorder=5)
-    ax1.text(km, 312, name, rotation=90, color='#065f46', fontsize=8.5, ha='center', fontweight='bold')
+    ax1.text(km, 272, name, rotation=90, color='#065f46', fontsize=8.5, ha='center', va='bottom', fontweight='bold')
 
 # RSU Gantries density
 rsu_kms = np.linspace(0, 155, 87)
-ax1.scatter(rsu_kms, np.full_like(rsu_kms, 605), color='#d97706', s=14, marker='|', label='87 Physical RSUs (1.8 km spacing, DSRC/5G/LEO)')
+ax1.scatter(rsu_kms, np.full_like(rsu_kms, 615), color='#d97706', s=14, marker='|', label='87 Physical RSUs (1.8 km spacing, DSRC/5G/LEO)')
 
 ax1.set_title('Pakistan M-1 Motorway 155 km Spatial Geometry, 10 Interchanges & 87 RSU Edge Topology', 
               fontweight='bold', pad=15)
@@ -76,57 +76,64 @@ print("Generated Figure 1:", fig1_path)
 
 # -------------------------------------------------------------
 # FIGURE 2: 365-DAY TRAFFIC, ATTACKS & MULTI-RAT FAILOVERS
+# (Fixed: Zero Text Overlap with Clear Spacing & Horizontal Telemetry Bars)
 # -------------------------------------------------------------
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(13, 5), dpi=300)
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5.2), dpi=300)
 
 months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 trips_m = [3.22, 2.95, 3.40, 3.15, 3.30, 3.10, 3.25, 3.20, 3.45, 3.35, 3.10, 3.38]
 attacks_k = [44.8, 42.1, 46.5, 48.2, 52.1, 55.4, 58.9, 56.2, 51.0, 53.5, 52.8, 53.4]
 
 x = np.arange(len(months))
-width = 0.38
+width = 0.40
 
 bars = ax1.bar(x, trips_m, width, label='Monthly Trips (Millions)', color='#0284c7', alpha=0.85, edgecolor='#0369a1')
 ax1.set_ylabel('Monthly Trips (Millions)', color='#0369a1', fontweight='bold')
 ax1.set_xlabel('Annual Operational Timeline (Months)', fontweight='bold')
 ax1.set_xticks(x)
-ax1.set_xticklabels(months)
-ax1.set_ylim(0, 4.2)
+ax1.set_xticklabels(months, fontsize=9.5)
+ax1.set_ylim(0, 5.0)
 
 ax1_twin = ax1.twinx()
-line = ax1_twin.plot(x, attacks_k, color='#dc2626', marker='o', lw=2.5, label='Injected Cyber Attacks (x1,000)')
+line = ax1_twin.plot(x, attacks_k, color='#dc2626', marker='o', lw=2.5, markersize=5, label='Injected Cyber Attacks (x1,000)')
 ax1_twin.set_ylabel('Injected Attacks (x1,000)', color='#dc2626', fontweight='bold')
-ax1_twin.set_ylim(30, 70)
+ax1_twin.set_ylim(25, 75)
 ax1_twin.grid(False)
 
-# Combine legends for ax1 and ax1_twin
+# Combine legends with zero collision
 lines_1, labels_1 = ax1.get_legend_handles_labels()
 lines_2, labels_2 = ax1_twin.get_legend_handles_labels()
 ax1.legend(lines_1 + lines_2, labels_1 + labels_2, loc='upper left', framealpha=0.95, facecolor='#ffffff', edgecolor='#cbd5e1')
 ax1.set_title('(a) 365-Day Monthly Traffic Volume vs. Adversarial Attacks', fontweight='bold', pad=12)
 
-# Multi-RAT Distribution
-rat_labels = ['5G NR-V2X\n(PC5 Sidelink)', '5.9 GHz DSRC\n(IEEE 802.11p)', 'Starlink LEO Satellite\n(Direct Telemetry)']
-rat_shares = [92.4, 7.1, 0.5]
-colors = ['#059669', '#d97706', '#7c3aed']
-explode = (0.04, 0.06, 0.14)
+# Multi-RAT Distribution as clean horizontal bar chart with absolute no text collision
+rat_names = [
+    'Starlink LEO Satellite\n(Direct Telemetry)',
+    '5.9 GHz DSRC\n(IEEE 802.11p Gantry)',
+    '5G NR-V2X\n(PC5 Sidelink Mesh)'
+]
+rat_pcts = [0.5, 7.1, 92.4]
+trips_vol = ['0.19M trips', '2.77M trips', '35.99M trips']
+bar_colors = ['#7c3aed', '#d97706', '#059669']
 
-wedges, texts, autotexts = ax2.pie(rat_shares, explode=explode, labels=rat_labels, autopct='%1.1f%%',
-                                  colors=colors, startangle=140, 
-                                  textprops=dict(color='#0f172a', fontsize=9.5, fontweight='semibold'),
-                                  wedgeprops=dict(edgecolor='#ffffff', linewidth=1.5))
-for at in autotexts:
-    at.set_color('#ffffff')
-    at.set_weight('bold')
-    at.set_fontsize(10)
+y_pos = np.arange(len(rat_names))
+bars2 = ax2.barh(y_pos, rat_pcts, height=0.50, color=bar_colors, alpha=0.90, edgecolor='#334155')
 
-ax2.set_title('(b) Multi-RAT Telemetry Failover Distribution\n(38.95M Total Corridor Trips)', fontweight='bold', pad=12)
+ax2.set_yticks(y_pos)
+ax2.set_yticklabels(rat_names, fontweight='semibold', fontsize=9.5)
+ax2.set_xlabel('Corridor Telemetry Traffic Share (%)', fontweight='bold')
+ax2.set_xlim(0, 115)
+
+for i, (pct, vol) in enumerate(zip(rat_pcts, trips_vol)):
+    ax2.text(pct + 2.0, i, f"{pct}%  ({vol})", va='center', ha='left', fontweight='bold', color='#0f172a', fontsize=9.5)
+
+ax2.set_title('(b) Multi-RAT Telemetry Distribution (38.95M Total Trips)', fontweight='bold', pad=12)
 
 plt.tight_layout()
 fig2_path = os.path.join(assets_dir, 'fig2_multirat_and_attacks.png')
 plt.savefig(fig2_path, dpi=300, bbox_inches='tight')
 plt.close()
-print("Generated Figure 2:", fig2_path)
+print("Generated Figure 2 (Fixed Overlap):", fig2_path)
 
 # -------------------------------------------------------------
 # FIGURE 3: CYBERSECURITY ROC & PRECISION-RECALL CURVES
@@ -233,12 +240,12 @@ fuel_save = np.array([0.0, 1.8, 3.9, 6.2, 8.8, 11.5, 13.9, 16.1, 18.0, 19.4, 20.
 ax1.plot(mpr, cap, color='#0284c7', marker='s', lw=2.5, label='Lane Capacity (veh/hr/lane)')
 ax1.set_xlabel('CAV Market Penetration Rate (MPR %)', fontweight='bold')
 ax1.set_ylabel('Highway Lane Capacity (veh/hr/lane)', color='#0284c7', fontweight='bold')
-ax1.set_ylim(1500, 4800)
+ax1.set_ylim(1500, 5200)
 
 ax1_t = ax1.twinx()
 ax1_t.plot(mpr, fuel_save, color='#059669', marker='^', lw=2.5, label='Fleet Fuel Savings (%)')
 ax1_t.set_ylabel('Fleet Fuel Savings (%)', color='#059669', fontweight='bold')
-ax1_t.set_ylim(0, 25)
+ax1_t.set_ylim(0, 28)
 ax1_t.grid(False)
 
 lines_1, labels_1 = ax1.get_legend_handles_labels()

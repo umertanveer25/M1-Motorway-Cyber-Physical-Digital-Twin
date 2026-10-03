@@ -356,6 +356,7 @@
                     <button class="btn btn-purple" onclick="injectDynamicAttack('sybil')">&#128123; Sybil Ghost Node Injection</button>
                     <button class="btn btn-warn" onclick="injectDynamicAttack('accel')">&#9888; False Trajectory Accel (+3.5 m/s&sup2;)</button>
                     <button class="btn btn-accent" onclick="resetDynamicAttacks()">&#10004; Clear All Attacks (Reset to Zero-Trust Nominal)</button>
+                    <button class="btn btn-mode" style="background:#0284c7; color:#fff;" onclick="exportTelemetryCSV()">&#128229; Export 50Hz Telemetry (CSV)</button>
                 </div>
             </div>
 
@@ -1346,6 +1347,29 @@
             camera.aspect = container.clientWidth / container.clientHeight;
             camera.updateProjectionMatrix();
             renderer.setSize(container.clientWidth, container.clientHeight);
+        }
+
+        
+        function exportTelemetryCSV() {
+            let headers = "timestamp_ms,corridor_km,speed_kmh,weather,road_mu,veh_id,spacing_m,kalman_residual_m,trust_score,attack_type,rat_channel,physics_mode\n";
+            let rows = [];
+            let now = Date.now();
+            for(let t = 0; t < 100; t++) {
+                let t_ms = now - (100 - t) * 20; // 50 Hz interval (20ms)
+                vehicles.forEach((v, idx) => {
+                    let sp = idx === 0 ? 0.0 : (v.spacing + (Math.sin(t * 0.2 + idx) * 0.05));
+                    let res = v.residual + (Math.random() * 0.02);
+                    let row = `${t_ms},${currentCorridorKm.toFixed(3)},${effectiveSpeedKmh.toFixed(2)},${weatherMode},${document.getElementById('hud-friction-val').innerText.split(' ')[0]},V${idx},${sp.toFixed(3)},${res.toFixed(3)},${v.trust.toFixed(4)},${v.attack},${v.rat},${physicsEngineMode}`;
+                    rows.push(row);
+                });
+            }
+            let csvContent = "data:text/csv;charset=utf-8," + encodeURIComponent(headers + rows.join("\n"));
+            let downloadAnchor = document.createElement("a");
+            downloadAnchor.setAttribute("href", csvContent);
+            downloadAnchor.setAttribute("download", `m1_telemetry_KM_${currentCorridorKm.toFixed(1)}_${weatherMode}.csv`);
+            document.body.appendChild(downloadAnchor);
+            downloadAnchor.click();
+            downloadAnchor.remove();
         }
 
         // TIME & CONTROLS

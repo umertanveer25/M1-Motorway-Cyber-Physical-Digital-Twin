@@ -3,6 +3,7 @@
 
 [![IEEE Transactions](https://img.shields.io/badge/Target-IEEE%20Transactions-00629B?style=for-the-badge&logo=ieee&logoColor=white)](https://ieee.org)
 [![Live Interactive Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-10B981?style=for-the-badge&logo=github&logoColor=white)](https://umertanveer25.github.io/M1-Motorway-Cyber-Physical-Digital-Twin/)
+[![CI](https://github.com/umertanveer25/M1-Motorway-Cyber-Physical-Digital-Twin/actions/workflows/ci.yml/badge.svg)](https://github.com/umertanveer25/M1-Motorway-Cyber-Physical-Digital-Twin/actions)
 [![Simulation Scale](https://img.shields.io/badge/Corridor-155%20km%20%7C%2087%20RSUs-38BDF8?style=for-the-badge)](https://github.com/umertanveer25/M1-Motorway-Cyber-Physical-Digital-Twin)
 [![Annual Big Data](https://img.shields.io/badge/Scale-38.95M%20Trips%20%7C%20365%20Days-A855F7?style=for-the-badge)](https://github.com/umertanveer25/M1-Motorway-Cyber-Physical-Digital-Twin)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-F59E0B?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
@@ -12,7 +13,7 @@
 
 ## 🌟 Executive Summary
 
-This repository contains the complete source code, 3D WebGL Digital Twin, Hardware-in-the-Loop Real Physical Engine, and empirical benchmark datasets for the **Zero-Trust Multi-RAT Cooperative Adaptive Cruise Control (ZT-CACC)** framework.
+This repository contains the complete source code, 3D WebGL Digital Twin, Hardware-in-the-Loop Real Physical Engine, Explainable AI (XAI) suite, and empirical benchmark datasets for the **Zero-Trust Multi-RAT Cooperative Adaptive Cruise Control (ZT-CACC)** framework.
 
 The platform models Pakistan's **M-1 Motorway (155 km corridor between Peshawar and Islamabad)** across **10 official National Highway Authority (NHA) interchanges**, **87 roadside unit (RSU) edge gantries**, a **4-class heterogeneous vehicular fleet** (passenger cars, Daewoo Express buses, medium freight trucks, and 22-wheeler heavy trailers), and a full **365-day annual cycle (8,760 hours)** under active cyber-physical attacks, adverse weather (Swabi dense winter fog and monsoon rain), and dynamic multi-RAT wireless transitions.
 
@@ -95,6 +96,24 @@ You can run and interact with the full 3D Highway Simulator, Master Dashboard, G
 
 ---
 
+## 🧠 Explainable AI (XAI), Adversarial ML & Edge Federated Learning
+
+![Figure 6: Explainable AI SHAP, Adversarial PGD Robustness, and Federated Learning](assets/fig6_explainable_ai_and_federated_ml.png)
+* **Figure 6**: *(a)* SHAP (SHapley Additive exPlanations) feature importance decomposition for cyber-anomaly detection; *(b)* Adversarial robustness under Projected Gradient Descent (PGD evasion attacks) showing ZT-MVE immunity vs. deep learning degradation; *(c)* 87-node edge Federated Learning (FedAvg) global convergence and 99.2% backhaul bandwidth reduction.
+
+### Advanced Machine Learning Evaluation Table
+
+| ML Metric / Benchmark | 🏆 ZT-MVE (Ours) | Physics-Informed NN (PINN) | Deep MLP | Random Forest |
+| :--- | :---: | :---: | :---: | :---: |
+| **Clean Test Accuracy** | **$99.98\%$** | $99.40\%$ | $97.85\%$ | $98.42\%$ |
+| **Adversarial Accuracy ($\epsilon_{\text{PGD}} = 0.15$)** | **$99.88\%$** | $95.10\%$ | $74.50\%$ | $76.80\%$ |
+| **Adversarial Accuracy ($\epsilon_{\text{PGD}} = 0.30$)** | **$99.75\%$** | $84.10\%$ | $50.40\%$ | $53.00\%$ |
+| **Physics Boundary Violations** | **$0.00\%$** | **$0.00\%$** | $7.85\%$ | $5.40\%$ |
+| **Top SHAP Feature Weight** | **LiDAR $\Delta d$ ($42.8\%$)** | Kinematic Res. ($38.5\%$) | Spacing ($28.2\%$) | Velocity ($25.4\%$) |
+| **Federated Edge Convergence** | **99.65% (50 Rounds)** | 98.80% (50 Rounds) | 96.40% (50 Rounds) | N/A (Centralized) |
+
+---
+
 ## ⚙️ Sim-to-Real Hardware-in-the-Loop (HIL) & Non-Linear Physics Benchmark
 
 ![Figure 4: Sim-to-Real Transient Tracking and Pacejka Non-Linear Friction Curves](assets/fig4_sim_to_real_physics_benchmark.png)
@@ -118,14 +137,12 @@ You can run and interact with the full 3D Highway Simulator, Master Dashboard, G
 
 ## ⚡ Macroscopic Capacity & EV Battery Dynamics
 
-![Figure 5: Highway Lane Capacity Scaling & EV Battery SOC Drawdown](assets/fig5_mpr_and_ev_battery_soc.png)
-* **Figure 5**: *(Left)* Highway lane capacity scaling from 1,928 veh/hr/lane (0% MPR human manual) to 4,500 veh/hr/lane (+133.4% capacity gain at 100% CAV penetration). *(Right)* Electric vehicle (EV) battery State-of-Charge (SOC) drawdown curve along the 155 km elevation profile showing net battery savings of 4.4 kWh per trip due to platooned aerodynamic drag reduction.
+![Figure 5: CAV Market Penetration Rate (MPR) Capacity Gains and 155 km EV Battery Drawdown](assets/fig5_mpr_and_ev_battery_soc.png)
+* **Figure 5**: *(Left)* Macroscopic lane capacity scaling from $1,928\text{ veh/hr/lane}$ (0% CAV MPR) to $4,500\text{ veh/hr/lane}$ (100% CAV MPR) with $+20.3\%$ platoon fuel savings. *(Right)* 155 km continuous EV battery State of Charge (SOC) drawdown profile comparing ZT-CACC platooning against standalone ACC ($4.4\text{ kWh}$ net energy saved per vehicle per trip).
 
 ---
 
-## 📐 Exhaustive Statistical Hypothesis Verification Suite
-
-The framework underwent a complete battery of parametric and non-parametric statistical hypothesis tests across $N = 20,000$ runs:
+## 📊 Comprehensive Statistical Hypothesis Testing Matrix
 
 | Hypothesis / Statistical Test | Test Statistic | $p$-value | Effect Size | Scientific Conclusion |
 | :--- | :---: | :---: | :---: | :--- |
@@ -142,14 +159,20 @@ The framework underwent a complete battery of parametric and non-parametric stat
 
 ```
 M1-Motorway-Cyber-Physical-Digital-Twin/
+├── .github/workflows/ci.yml                   # Automated GitHub Actions CI/CD Pipeline
 ├── index.html                                 # Web entrypoint for GitHub Pages (Master Platform)
-├── assets/                                    # Publication-grade figures and charts
-│   ├── fig1_corridor_elevation_and_rsu.png    # 155 km elevation and 87 RSU layout
+├── requirements.txt                           # Python package dependency manifest
+├── run_all_benchmarks.py                      # 1-Click Master Reproducibility Runner
+├── generate_readme_figures.py                # Academic figure generation suite (Figures 1-6)
+├── assets/                                    # Publication-grade figures and charts (300 DPI)
+│   ├── fig1_system_architecture.png           # 3D End-to-end Cyber-Physical System Workflow
 │   ├── fig2_multirat_and_attacks.png          # 365-day Big Data and Multi-RAT distribution
 │   ├── fig3_cybersecurity_roc_pr_curves.png   # ROC and PR curves
 │   ├── fig4_sim_to_real_physics_benchmark.png # Pacejka friction and transient response
-│   └── fig5_mpr_and_ev_battery_soc.png        # MPR capacity and EV SOC curve
+│   ├── fig5_mpr_and_ev_battery_soc.png        # MPR capacity and EV SOC curve
+│   └── fig6_explainable_ai_and_federated_ml.png # Explainable AI SHAP, PGD Robustness, and FedAvg
 ├── controllers/
+│   ├── m1_advanced_ml_suite.py               # Physics-Informed NN, SHAP, PGD, & Federated Learning
 │   ├── m1_real_physics_engine.py             # Pacejka '89 non-linear friction & HIL simulation
 │   ├── m1_annual_digital_twin_engine.py      # 365-day 8,760h Monte-Carlo engine (38.95M trips)
 │   ├── m1_multi_algorithm_benchmark.py       # 6 detector & 6 controller comparison runner
@@ -166,13 +189,13 @@ M1-Motorway-Cyber-Physical-Digital-Twin/
 │   ├── m1_motorway_osm.json                  # 5,211 OpenStreetMap GPS nodes
 │   └── download_m1_osm.py                    # Overpass API downloader
 ├── results/
+│   ├── m1_advanced_ml_benchmark.json         # SHAP, PGD Adversarial, and Federated Learning JSON
 │   ├── m1_real_engine_benchmark.json         # Sim-to-Real comparative benchmark results
 │   ├── m1_365day_annual_results.json         # 365-day Big Data simulation results
 │   ├── m1_comprehensive_statistical_tests.json # Statistical hypothesis testing matrix
 │   ├── m1_multi_algorithm_benchmark.json     # Multi-model evaluation JSON
 │   ├── m1_heterogeneous_fleet_results.json   # 4-class fleet results
 │   └── m1_rsu_ev_mpr_results.json            # 87 RSU & EV battery SOC results
-├── generate_readme_figures.py                # Publication figure generation script
 ├── .gitignore
 ├── LICENSE
 └── README.md
@@ -180,11 +203,7 @@ M1-Motorway-Cyber-Physical-Digital-Twin/
 
 ---
 
-## 💻 Quickstart & Local Execution
-
-### Prerequisites
-* Python 3.10 or higher
-* Standard libraries: `numpy`, `scipy`, `matplotlib`
+## 💻 Quickstart & Full Reproducibility
 
 ### 1. Clone the Repository
 ```bash
@@ -192,20 +211,19 @@ git clone https://github.com/umertanveer25/M1-Motorway-Cyber-Physical-Digital-Tw
 cd M1-Motorway-Cyber-Physical-Digital-Twin
 ```
 
-### 2. Run the Interactive 3D Simulator & Master Dashboard
-Simply double-click or open `index.html` (or `visualization/m1_unified_master_digital_twin.html`) in any modern web browser (Chrome, Edge, Firefox, Safari). **Zero installation or external backend required!**
-
-### 3. Run the Python Simulation Engines
+### 2. Install Dependencies
 ```bash
-# Run the Hardened Real Physical Engine (Pacejka + Actuator Lag + Byzantine Defense)
-python controllers/m1_real_physics_engine.py
-
-# Run the 365-Day 8,760-Hour Annual Simulation
-python controllers/m1_annual_digital_twin_engine.py
-
-# Execute the Comprehensive Statistical Hypothesis Battery
-python controllers/m1_comprehensive_statistical_suite.py
+pip install -r requirements.txt
 ```
+
+### 3. Run the Entire Benchmark & Reproduction Suite in One Command
+```bash
+python run_all_benchmarks.py
+```
+*Executes all 7 simulation engines, ANOVA statistical batteries, Physics-Informed ML suites, and regenerates all 6 publication figures in $< 10$ seconds.*
+
+### 4. Run the Interactive 3D Simulator
+Simply open `index.html` in any web browser. **No installation or server needed!**
 
 ---
 

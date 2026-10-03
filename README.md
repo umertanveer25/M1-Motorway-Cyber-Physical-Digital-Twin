@@ -50,10 +50,10 @@ You can run and interact with the full 3D Highway Simulator, Master Dashboard, G
 
 ---
 
-## 🗺️ Corridor Geometry & RSU Edge Infrastructure Grid
+## 🏛️ End-to-End Cyber-Physical Architecture & Workflow
 
-![Figure 1: M-1 Motorway 155 km Elevation Profile & 87 RSU Edge Grid](assets/fig1_corridor_elevation_and_rsu.png)
-* **Figure 1**: M-1 Motorway continuous 155 km spatial geometry, elevation profile from Peshawar (345 m ASL) rising through the Indus Basin and Margalla foothills to Islamabad (540 m ASL), showing the 10 official NHA interchanges and 87 physical RSU edge computing gantries spaced at 1.8 km intervals.
+![Figure 1: End-to-End Cyber-Physical System Architecture of M-1 Digital Twin](assets/fig1_system_architecture.png)
+* **Figure 1**: Three-layer Cyber-Physical Digital Twin and Zero-Trust CACC architecture across the 155 km M-1 Motorway corridor: (1) **Bottom Physical Layer** depicting the 6-lane highway, 10 NHA interchanges, 87 RSU edge gantries, heterogeneous vehicle platoons, and adverse weather zones (Swabi dense fog & Indus monsoon rain); (2) **Middle Multi-RAT Communication & Threat Mesh** capturing 5G NR-V2X sidelink, 5.9 GHz DSRC, Starlink LEO satellite telemetry, and active cyber-physical attack vectors; and (3) **Top Zero-Trust AI & Digital Twin Engine** showing real-time kinematics, Pacejka non-linear friction, tri-modal Byzantine consensus fusion, and NH&MP police command alert console.
 
 | Interchange ID | Interchange Name | Corridor Location | Features & Infrastructure |
 | :---: | :--- | :---: | :--- |

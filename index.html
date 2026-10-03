@@ -1261,6 +1261,7 @@
             for(let j = 0; j < 6; j++) {
                 const onCar = createCarMesh(0x94a3b8, 'ONCOMING');
                 onCar.position.set(-2.5, 0.35, (j - 3) * 80);
+                onCar.rotation.y = Math.PI;
                 scene.add(onCar);
                 oncomingVehicles.push(onCar);
             }
@@ -1291,7 +1292,7 @@
                 new THREE.BoxGeometry(1.5, 0.55, 2.2),
                 new THREE.MeshLambertMaterial({ color: 0x0f172a })
             );
-            cabin.position.set(0, 0.95, -0.2);
+            cabin.position.set(0, 0.95, 0.2);
             carGroup.add(cabin);
 
             // Wheels
@@ -1305,18 +1306,25 @@
                 carGroup.add(w);
             });
 
-            // Headlights
-            const headGeo = new THREE.BoxGeometry(0.3, 0.15, 0.05);
-            const headMat = new THREE.MeshBasicMaterial({ color: 0xffffff });
-            const hl1 = new THREE.Mesh(headGeo, headMat); hl1.position.set(-0.6, 0.45, 2.12);
-            const hl2 = new THREE.Mesh(headGeo, headMat); hl2.position.set(0.6, 0.45, 2.12);
+            // Front Headlights (Facing Forward down highway towards -Z: z = -2.12)
+            const headGeo = new THREE.BoxGeometry(0.32, 0.15, 0.06);
+            const headMat = new THREE.MeshBasicMaterial({ color: 0xffffff }); // Bright Xenon White Headlights
+            const hl1 = new THREE.Mesh(headGeo, headMat); hl1.position.set(-0.62, 0.45, -2.12);
+            const hl2 = new THREE.Mesh(headGeo, headMat); hl2.position.set(0.62, 0.45, -2.12);
             carGroup.add(hl1); carGroup.add(hl2);
 
-            // Taillights
-            const tailMat = new THREE.MeshBasicMaterial({ color: 0xff0000 });
-            const tl1 = new THREE.Mesh(headGeo, tailMat); tl1.position.set(-0.6, 0.45, -2.12);
-            const tl2 = new THREE.Mesh(headGeo, tailMat); tl2.position.set(0.6, 0.45, -2.12);
+            // Rear Taillights (Facing Chase Camera behind vehicle towards +Z: z = +2.12)
+            const tailGeo = new THREE.BoxGeometry(0.32, 0.15, 0.06);
+            const tailMat = new THREE.MeshBasicMaterial({ color: 0xef4444 }); // Bright Crimson Red Taillights
+            const tl1 = new THREE.Mesh(tailGeo, tailMat); tl1.position.set(-0.62, 0.45, 2.12);
+            const tl2 = new THREE.Mesh(tailGeo, tailMat); tl2.position.set(0.62, 0.45, 2.12);
             carGroup.add(tl1); carGroup.add(tl2);
+
+            // Rear Center High-Mount Stop Lamp (CHMSL LED)
+            const chmslGeo = new THREE.BoxGeometry(0.6, 0.06, 0.05);
+            const chmsl = new THREE.Mesh(chmslGeo, tailMat);
+            chmsl.position.set(0, 1.22, 0.9);
+            carGroup.add(chmsl);
 
             return carGroup;
         }

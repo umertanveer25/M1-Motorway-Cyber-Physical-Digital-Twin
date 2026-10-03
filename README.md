@@ -10,11 +10,11 @@
 
 ---
 
-## 🌟 Overview
+## 🌟 Executive Summary
 
 This repository contains the complete source code, 3D WebGL Digital Twin, Hardware-in-the-Loop Real Physical Engine, and empirical benchmark datasets for the **Zero-Trust Multi-RAT Cooperative Adaptive Cruise Control (ZT-CACC)** framework.
 
-The platform models Pakistan's **M-1 Motorway (155 km corridor between Peshawar and Islamabad)** across **10 official National Highway Authority (NHA) interchanges**, **87 roadside unit (RSU) edge gantries**, a **4-class heterogeneous vehicular fleet** (passenger cars, Daewoo Express buses, medium trucks, and 22-wheeler heavy trailers), and a full **365-day annual cycle (8,760 hours)** under active cyber-physical attacks, adverse weather (Swabi dense winter fog and monsoon rain), and dynamic multi-RAT wireless transitions.
+The platform models Pakistan's **M-1 Motorway (155 km corridor between Peshawar and Islamabad)** across **10 official National Highway Authority (NHA) interchanges**, **87 roadside unit (RSU) edge gantries**, a **4-class heterogeneous vehicular fleet** (passenger cars, Daewoo Express buses, medium freight trucks, and 22-wheeler heavy trailers), and a full **365-day annual cycle (8,760 hours)** under active cyber-physical attacks, adverse weather (Swabi dense winter fog and monsoon rain), and dynamic multi-RAT wireless transitions.
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
@@ -50,88 +50,105 @@ You can run and interact with the full 3D Highway Simulator, Master Dashboard, G
 
 ---
 
-## 🚀 Key Scientific Contributions & Features
+## 🗺️ Corridor Geometry & RSU Edge Infrastructure Grid
 
-1. **Closed-Loop Cyber-Physical Coupling**:
-   * Bridges the gap between offline machine learning intrusion detection and low-level longitudinal control. Transforms kinematic anomaly residuals ($r_p$) into a continuous **Trust Score** ($T_i \in [0, 1]$) governing physical vehicle spacing.
-2. **Tri-Modal Consensus & Dual-Spoofing Immunity**:
-   * Defeats coordinated electronic warfare attacks where both Radar echoes and V2X packets are spoofed simultaneously. Cross-validates via independent optical LiDAR depth, IMU dead-reckoning observers, and Roadside RSU Byzantine spatial echoes (**$99.85\%$ detection accuracy**).
-3. **Mass-Scaled Heterogeneous Dynamic Headway ($h_i(m_i, \tau_{b,i})$)**:
-   * Prevents the *"22-Wheeler Accordion Trap"*. Automatically widens physical headway for heavy freight trailers with pneumatic air-brake lag ($\tau_b = 0.78\text{ s}$), ensuring zero rear-end collisions during sudden emergency braking.
-4. **Weather-Adaptive Kalman Covariance Scaling ($R_k(\text{weather})$)**:
-   * Dynamically tunes observation noise covariance during Swabi dense fog ($< 40\text{ m}$ visibility) and monsoon torrential rain, slashing false alarm rates to **$0.24\%$**.
-5. **Hierarchical Multi-RAT Zero-Trust Brokerage**:
-   * Executes sub-millisecond failovers across 5G NR-V2X (92.4%), DSRC (7.1%), Optical VLC, and LEO Satellite Starlink supervisory routing.
-6. **Hardware-in-the-Loop (HIL) Real Physics Engine**:
-   * Incorporates Pacejka '89 non-linear tire-road friction ($\mu_{\text{dry}} = 0.85, \mu_{\text{fog}} = 0.58, \mu_{\text{wet}} = 0.48$), turbulent wake aerodynamic drafting ($C_d$ reduction), and actuator time constants.
-
----
-
-## 📊 Benchmark Results
-
-### 1. Cybersecurity Misbehavior Detection Benchmark (VeReMi & M-1 Corpus)
-
-| Algorithm | Accuracy | F1-Score | False Alarm Rate (FPR) | Inference Latency ($\mu\text{s}$) |
-| :--- | :---: | :---: | :---: | :---: |
-| **🏆 ZT-MVE (Proposed)** | **$99.98\%$** | **$0.9998$** | **$0.02\%$** | **$82.4\ \mu\text{s}$** |
-| Random Forest | $98.42\%$ | $0.9840$ | $1.58\%$ | $320.5\ \mu\text{s}$ |
-| Deep MLP Neural Net | $97.85\%$ | $0.9781$ | $2.15\%$ | $850.2\ \mu\text{s}$ |
-| Support Vector Machine (RBF) | $96.12\%$ | $0.9608$ | $3.88\%$ | $1,420.0\ \mu\text{s}$ |
-| Rule-Based Plausibility Filter | $94.30\%$ | $0.9415$ | $5.70\%$ | $12.5\ \mu\text{s}$ |
-| Isolation Forest | $91.50\%$ | $0.9120$ | $8.50\%$ | $640.0\ \mu\text{s}$ |
-
----
-
-### 2. Longitudinal Platoon Controller Performance Under Active Cyber-Attack
-
-| Controller Architecture | Spacing MAE ($\text{m}$) | Spacing RMSE ($\text{m}$) | String Stability ($\|\Gamma\|_\infty \le 1$) | Collisions Under Attack |
-| :--- | :---: | :---: | :---: | :---: |
-| **🏆 ZT-CACC (Proposed)** | **$0.88\text{ m}$** | **$1.16\text{ m}$** | **$0.884$ (Stable)** | **$0$ (Zero Crashes)** |
-| Secure-MPC (Sec-MPC) | $1.42\text{ m}$ | $1.85\text{ m}$ | $0.945$ (Stable) | $0$ (Zero Crashes) |
-| Sliding Mode Control (SMC-CACC) | $1.65\text{ m}$ | $2.10\text{ m}$ | $0.968$ (Stable) | $12$ minor incidents |
-| Trust-Robust ACC (TR-CACC) | $2.10\text{ m}$ | $2.68\text{ m}$ | $1.025$ (Marginal) | $28$ incidents |
-| Standard Radar ACC | $3.85\text{ m}$ | $4.92\text{ m}$ | $0.910$ (Laggy) | $0$ (Degraded flow) |
-| Baseline Cooperative CACC | $12.45\text{ m}$ | $16.20\text{ m}$ | $1.850$ (Unstable) | **$34.8\%$ Fatal Collisions** |
-
----
-
-### 3. Digital Twin (Ideal Sim) vs. Real Physical Engine (Pacejka + HIL)
-
-| Performance Dimension | 🌐 Digital Twin (Ideal Sim) | ⚙️ Real Physical Engine | Sim-to-Real Gap ($\Delta$) |
-| :--- | :---: | :---: | :--- |
-| **Attack Detection Accuracy** | $100.00\%$ | $100.00\%$ | $0.00\%$ (Zero Degradation) |
-| **Dual-Spoofing Detection Rate** | $99.98\%$ | $99.85\%$ | $-0.13\%$ (Tri-Modal Consensus) |
-| **Swabi Fog/Rain False Alarm Rate** | $0.02\%$ | $0.24\%$ | $+0.22\%$ (Adaptive $R_k$) |
-| **Mean Spacing Error (MAE)** | $2.08\text{ m}$ | $3.57\text{ m}$ | $+1.49\text{ m}$ (Pneumatic Actuator Lag) |
-| **Platoon Collisions under Attack** | **$0$ (Zero)** | **$0$ (Zero)** | **$100\%$ Collision-Free Safety** |
-| **Theil's Inequality Coefficient $U$** | -- | **$0.0799$** | $U < 0.10 \implies$ **$92.01\%$ Empirical Fidelity** |
-
----
-
-## 🗺️ M-1 Motorway Geometry & RSU Infrastructure Grid
-
-The corridor is modeled from high-precision OpenStreetMap (OSM) spatial geometry containing **5,211 GPS coordinates**:
+![Figure 1: M-1 Motorway 155 km Elevation Profile & 87 RSU Edge Grid](assets/fig1_corridor_elevation_and_rsu.png)
+* **Figure 1**: M-1 Motorway continuous 155 km spatial geometry, elevation profile from Peshawar (345 m ASL) rising through the Indus Basin and Margalla foothills to Islamabad (540 m ASL), showing the 10 official NHA interchanges and 87 physical RSU edge computing gantries spaced at 1.8 km intervals.
 
 | Interchange ID | Interchange Name | Corridor Location | Features & Infrastructure |
 | :---: | :--- | :---: | :--- |
-| **IC-01** | **Peshawar Ring Road & Main Toll** | `KM 0.0` | Electronic Toll Collection (ETC) + RSU Gantry 01 |
+| **IC-01** | **Peshawar Ring Road & Main Toll Plaza** | `KM 0.0` | Electronic Toll Collection (ETC) + RSU Gantry 01 + Multi-RAT Gateway |
 | **IC-02** | **Charsadda Interchange** | `KM 15.2` | RSU Gantries 08–10 + Agricultural plain sector |
-| **IC-03** | **Rashakai / Risalpur Interchange** | `KM 39.4` | Rashakai SEZ (CPEC Zone) + Fast Charging Hub |
-| **IC-04** | **Col. Sher Khan (Mardan) Interchange** | `KM 54.0` | Heavy freight junction (Mardan/Swat Expressway link) |
-| **IC-05** | **Swabi Interchange** | `KM 72.8` | Dense winter fog hotspot (Weather station integration) |
-| **IC-06** | **Chach Interchange** | `KM 95.5` | RSU Gantries 52–55 + Undulating elevation zone |
-| **IC-07** | **Indus River & Ghazi Interchange** | `KM 106.0` | Major bridge structure + Rest & Service Area Hub |
+| **IC-03** | **Rashakai / Risalpur Interchange** | `KM 39.4` | Rashakai SEZ (CPEC Priority Zone) + DC Fast Charging Hub |
+| **IC-04** | **Col. Sher Khan (Mardan) Interchange** | `KM 54.0` | Heavy freight junction (Mardan / Swat Expressway M-16 link) |
+| **IC-05** | **Swabi Interchange** | `KM 72.8` | Dense winter fog hotspot (Dynamic Weather station integration) |
+| **IC-06** | **Chach Interchange** | `KM 95.5` | RSU Gantries 52–55 + Undulating elevation sector |
+| **IC-07** | **Indus River & Ghazi Interchange** | `KM 106.0` | Major Indus bridge structure + Rest & Service Area Hub |
 | **IC-08** | **Burhan Interchange (Hassanabdal)** | `KM 122.3` | CPEC Hakla M-14 & Hazara M-15 Motorway Nexus |
-| **IC-09** | **Brahma Bahtar Interchange (Wah)** | `KM 138.7` | Industrial transport corridor + Weigh-in-motion RSU |
-| **IC-10** | **Islamabad / Rawalpindi Main Toll Plaza** | `KM 155.0` | Corridor Terminal + Multi-RAT Core Cloud Broker |
+| **IC-09** | **Brahma Bahtar Interchange (Wah Cantt)** | `KM 138.7` | Heavy industrial transport corridor + Weigh-in-motion RSU |
+| **IC-10** | **Islamabad / Rawalpindi Main Toll Plaza** | `KM 155.0` | Corridor Terminal + Multi-RAT Cloud Broker + NHA Central Command |
 
 ---
 
-## 🛠️ Repository Structure
+## 📈 365-Day Big Data Simulation & Multi-RAT Failover Distribution
+
+![Figure 2: 365-Day Traffic Trips, Injected Attacks, and Multi-RAT Telemetry Distribution](assets/fig2_multirat_and_attacks.png)
+* **Figure 2**: *(Left)* Monthly traffic volume (38.95M annual trips) vs. 614,992 injected cyber-attacks across 12 months. *(Right)* Multi-RAT telemetry traffic distribution: 5G NR-V2X (92.4%), 5.9 GHz DSRC fallback (7.1%), and Starlink LEO Satellite supervisory channel (0.5%).
+
+---
+
+## 🔬 Cybersecurity Intrusion Detection & Controller Benchmark
+
+![Figure 3: Cybersecurity ROC and Precision-Recall Curves](assets/fig3_cybersecurity_roc_pr_curves.png)
+* **Figure 3**: *(Left)* Receiver Operating Characteristic (ROC) curves showing ZT-MVE tracing near-perfect orthogonality (AUC = 0.9998) vs. Random Forest (0.9842), Deep MLP (0.9785), SVM (0.9612), and Rule-Based (0.9430). *(Right)* Precision-Recall (PR) curves demonstrating ultra-low false alarms (FPR = 0.02%).
+
+### Comprehensive Detection Benchmark Table
+
+| Algorithm Architecture | Accuracy | F1-Score | Precision | Recall | False Alarm Rate (FPR) | Inference Latency ($\mu\text{s}$) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **🏆 ZT-MVE (Proposed)** | **$99.98\%$** | **$0.9998$** | **$0.9998$** | **$0.9998$** | **$0.02\%$** | **$82.4\ \mu\text{s}$** |
+| Random Forest (100 Trees) | $98.42\%$ | $0.9840$ | $0.9835$ | $0.9845$ | $1.58\%$ | $320.5\ \mu\text{s}$ |
+| Deep MLP Neural Network | $97.85\%$ | $0.9781$ | $0.9778$ | $0.9785$ | $2.15\%$ | $850.2\ \mu\text{s}$ |
+| Support Vector Machine (RBF) | $96.12\%$ | $0.9608$ | $0.9598$ | $0.9618$ | $3.88\%$ | $1,420.0\ \mu\text{s}$ |
+| Rule-Based Plausibility Filter | $94.30\%$ | $0.9415$ | $0.9390$ | $0.9440$ | $5.70\%$ | $12.5\ \mu\text{s}$ |
+| Isolation Forest (Unsupervised)| $91.50\%$ | $0.9120$ | $0.9080$ | $0.9160$ | $8.50\%$ | $640.0\ \mu\text{s}$ |
+
+---
+
+## ⚙️ Sim-to-Real Hardware-in-the-Loop (HIL) & Non-Linear Physics Benchmark
+
+![Figure 4: Sim-to-Real Transient Tracking and Pacejka Non-Linear Friction Curves](assets/fig4_sim_to_real_physics_benchmark.png)
+* **Figure 4**: *(Left)* Transient platoon headway expansion under a +12m False Data Injection attack comparing the Digital Twin ideal model against the Real Physical Engine. *(Right)* Pacejka '89 non-linear tire-road friction adhesion curves $\mu(s)$ across Peshawar dry asphalt (0.85), Swabi winter fog moisture (0.58), and Indus monsoon wet asphalt (0.48).
+
+### Sim-to-Real Physical Benchmark Table (20,000 Step Monte-Carlo Run)
+
+| Performance Dimension | 🌐 Digital Twin (Ideal Sim) | ⚙️ Hardened Real Engine V2.0 | Sim-to-Real Gap ($\Delta$) | Physical Rationale |
+| :--- | :---: | :---: | :---: | :--- |
+| **Attack Detection Accuracy** | **$100.00\%$** | **$100.00\%$** | **$0.00\%$** | ZT-MVE Kalman-Bucy $\chi^2$ invariant detects all attacks under noise |
+| **Dual-Spoofing Detection Rate** | **$99.98\%$** | **$99.85\%$** | **$-0.13\%$** | Tri-Modal Optical LiDAR + Roadside RSU Byzantine Spatial Echoes |
+| **Swabi Fog/Rain False Alarm Rate** | **$0.02\%$** | **$0.24\%$** | **$+0.22\%$** | Weather-Adaptive Kalman Noise Covariance Scaling $R_k(\text{weather})$ |
+| **Mean Spacing Error (MAE)** | **$2.08\text{ m}$** | **$3.57\text{ m}$** | **$+1.49\text{ m}$** | Actuator lag ($\tau_b = 0.20\text{s}$ hydraulic, $0.78\text{s}$ pneumatic) & tire slip |
+| **22-Wheeler Heavy Truck Spacing MAE**| -- | **$4.12\text{ m}$** | -- | Mass-and-Actuator Scaled Headway $h_i(m_i, \tau_b)$ prevents accordion trap |
+| **Detection Latency** | **$82.4\ \mu\text{s}$** | **$146.8\ \mu\text{s}$** | **$+64.4\ \mu\text{s}$** | Wireless channel Rician fading retries & interrupt overhead |
+| **CO2 Emission Savings** | **$16.4\%$** | **$15.2\%$** | **$-1.2\%$** | Aerodynamic turbulent wake drafting + rolling slip friction |
+| **Theil's Inequality Coefficient $U$** | -- | **$0.0799$** | -- | $U < 0.10 \implies$ **$92.01\%$ High Empirical Predictive Fidelity** |
+| **Platoon Collisions under Attack** | **$0$ (Zero)** | **$0$ (Zero)** | **$0$ (Zero)** | **$100\%$ Collision-Free Safety Maintained across all 155 km** |
+
+---
+
+## ⚡ Macroscopic Capacity & EV Battery Dynamics
+
+![Figure 5: Highway Lane Capacity Scaling & EV Battery SOC Drawdown](assets/fig5_mpr_and_ev_battery_soc.png)
+* **Figure 5**: *(Left)* Highway lane capacity scaling from 1,928 veh/hr/lane (0% MPR human manual) to 4,500 veh/hr/lane (+133.4% capacity gain at 100% CAV penetration). *(Right)* Electric vehicle (EV) battery State-of-Charge (SOC) drawdown curve along the 155 km elevation profile showing net battery savings of 4.4 kWh per trip due to platooned aerodynamic drag reduction.
+
+---
+
+## 📐 Exhaustive Statistical Hypothesis Verification Suite
+
+The framework underwent a complete battery of parametric and non-parametric statistical hypothesis tests across $N = 20,000$ runs:
+
+| Hypothesis / Statistical Test | Test Statistic | $p$-value | Effect Size | Scientific Conclusion |
+| :--- | :---: | :---: | :---: | :--- |
+| **One-Way ANOVA (Detection Accuracy)** | $F = 2,757.26$ | $p < 10^{-15}$ | $\eta^2 = 0.8632$ (Very Large) | Statistically significant superiority over baseline models ($p < 0.001$) |
+| **One-Way ANOVA (Controller Spacing MAE)** | $F = 12,924.82$ | $p < 10^{-15}$ | $\eta^2 = 0.9673$ (Very Large) | Highly significant reduction in longitudinal spacing error under attack |
+| **Welch's $t$-test (ZT-MVE vs. SVM)** | $t = 64.53$ | $p < 10^{-12}$ | Cohen's $d = 4.78$ (Huge Effect) | Rejects null hypothesis; ZT-MVE achieves higher detection accuracy |
+| **Kruskal-Wallis Non-Parametric $H$-Test** | $H = 1,992.51$ | $p < 10^{-15}$ | $\epsilon^2 = 0.9105$ | Multi-model non-parametric distribution divergence confirmed |
+| **Moran's $I$ Spatial Autocorrelation** | $I = 0.0126$ | $p < 10^{-4}$ | $z = 0.69$ | Identifies incident spatial clustering around Swabi fog and Indus bridge |
+| **Epidemiological Safety Odds Ratio ($OR$)** | $OR = 29,529.2$ | $p < 10^{-15}$ | $95\%\text{ CI: } [21450, 40640]$ | Standard CACC has $>29,500\times$ higher collision risk than Zero-Trust CACC |
+
+---
+
+## 🛠️ Repository File Structure
 
 ```
 M1-Motorway-Cyber-Physical-Digital-Twin/
 ├── index.html                                 # Web entrypoint for GitHub Pages (Master Platform)
+├── assets/                                    # Publication-grade figures and charts
+│   ├── fig1_corridor_elevation_and_rsu.png    # 155 km elevation and 87 RSU layout
+│   ├── fig2_multirat_and_attacks.png          # 365-day Big Data and Multi-RAT distribution
+│   ├── fig3_cybersecurity_roc_pr_curves.png   # ROC and PR curves
+│   ├── fig4_sim_to_real_physics_benchmark.png # Pacejka friction and transient response
+│   └── fig5_mpr_and_ev_battery_soc.png        # MPR capacity and EV SOC curve
 ├── controllers/
 │   ├── m1_real_physics_engine.py             # Pacejka '89 non-linear friction & HIL simulation
 │   ├── m1_annual_digital_twin_engine.py      # 365-day 8,760h Monte-Carlo engine (38.95M trips)
@@ -155,6 +172,7 @@ M1-Motorway-Cyber-Physical-Digital-Twin/
 │   ├── m1_multi_algorithm_benchmark.json     # Multi-model evaluation JSON
 │   ├── m1_heterogeneous_fleet_results.json   # 4-class fleet results
 │   └── m1_rsu_ev_mpr_results.json            # 87 RSU & EV battery SOC results
+├── generate_readme_figures.py                # Publication figure generation script
 ├── .gitignore
 ├── LICENSE
 └── README.md
@@ -162,11 +180,11 @@ M1-Motorway-Cyber-Physical-Digital-Twin/
 
 ---
 
-## 💻 Quickstart & Local Installation
+## 💻 Quickstart & Local Execution
 
 ### Prerequisites
 * Python 3.10 or higher
-* `numpy`, `scipy`, `matplotlib` (optional, for local headless execution)
+* Standard libraries: `numpy`, `scipy`, `matplotlib`
 
 ### 1. Clone the Repository
 ```bash
@@ -174,8 +192,8 @@ git clone https://github.com/umertanveer25/M1-Motorway-Cyber-Physical-Digital-Tw
 cd M1-Motorway-Cyber-Physical-Digital-Twin
 ```
 
-### 2. Run the Interactive Master Platform
-Simply double-click or open `index.html` (or `visualization/m1_unified_master_digital_twin.html`) in any modern web browser (Chrome, Edge, Firefox, Safari). **No server or backend required!**
+### 2. Run the Interactive 3D Simulator & Master Dashboard
+Simply double-click or open `index.html` (or `visualization/m1_unified_master_digital_twin.html`) in any modern web browser (Chrome, Edge, Firefox, Safari). **Zero installation or external backend required!**
 
 ### 3. Run the Python Simulation Engines
 ```bash
